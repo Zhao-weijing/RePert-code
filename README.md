@@ -1,4 +1,4 @@
-# RePert
+# RePert-code
 
 RePert constructs reproducible estimates of cellular perturbation responses from independent measurements and uses matched cross-modal evidence for conditional updates.
 
@@ -43,8 +43,8 @@ See `docs/reproduction.md` for supplementary plots and upstream requirements. Re
 
 `docs/source_data_map.csv` maps each display item to supplied files. Public assay data access is documented in `docs/data_access.md`. Preserve compound, dose and acquisition-plate identity when preparing inputs. Training seeds are model realizations, not independent biological measurements.
 
-## Release status and licence
+## Code availability and licence
 
-The publication code package is hosted at https://github.com/Zhao-weijing/RePert-publication. RePert code is distributed under the MIT licence; see `LICENSE`. Third-party software and assay data retain their own terms, as described in `docs/third_party_software.md` and `docs/data_access.md`.
+The code, numerical source data and analysis workflows for RePert are hosted at [RePert-code](https://github.com/Zhao-weijing/RePert-code). RePert code is distributed under the MIT licence; see `LICENSE`. Third-party software and assay data retain their own terms, as described in `docs/third_party_software.md` and `docs/data_access.md`.
 
 The numerical reconstruction and synthetic example have been checked locally. Full upstream training reproduction remains unverified. An archival DOI has not yet been assigned. See `metadata/release_status.json` for the verification scope.
