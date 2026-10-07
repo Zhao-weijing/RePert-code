@@ -1,5 +1,4 @@
-* text=auto
-*.csv text eol=lf
-*.py text eol=lf
+# Preserve audited file bytes across platforms, including CSV line endings.
+* -text
 *.pdf binary
 *.xlsx binary
