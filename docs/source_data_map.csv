@@ -1,0 +1,52 @@
+display_item,kind,path,available,level
+Fig. 2a,figure,figures/data/figure_2/figure2_panelA.csv,True,frozen_numerical_source
+Fig. 2a,figure,figures/data/figure_2/figure2_panelA_compounds.csv,True,frozen_numerical_source
+Fig. 2b,figure,figures/data/figure_2/figure2_panelB.csv,True,frozen_numerical_source
+Fig. 2b,figure,figures/data/figure_2/figure2_panelB_seed.csv,True,frozen_numerical_source
+Fig. 2b,figure,figures/data/figure_2/figure2_panelB_compounds.csv,True,frozen_numerical_source
+Fig. 2b,figure,figures/data/figure_2/figure2_panelC.csv,True,frozen_numerical_source
+Fig. 2b,figure,figures/data/figure_2/figure2_panelC_seed.csv,True,frozen_numerical_source
+Fig. 2c,figure,figures/data/figure_2/figure2_panelD.csv,True,frozen_numerical_source
+Fig. 2c,figure,figures/data/figure_2/figure2_panelD_all_metrics.csv,True,frozen_numerical_source
+Fig. 2d,figure,figures/data/figure_2/figure2_panelE.csv,True,frozen_numerical_source
+Fig. 2e,figure,figures/data/figure_2/figure2_panelF.csv,True,frozen_numerical_source
+Fig. 3a-c,figure,figures/data/figure_3/figure3_summary.csv,True,frozen_numerical_source
+Fig. 3b,figure,DERIVED:figure3b,True,derived_or_descriptive
+Fig. 3b,figure,DERIVED:figure3b_seed,True,derived_or_descriptive
+Fig. 3b,figure,figures/data/figure_3/figure3_paired_ge_scores.csv,True,frozen_numerical_source
+Fig. 3c,figure,figures/data/figure_3/inputs/cross_modal/sequential_evidence/conditional_marginal_gain.csv,True,frozen_numerical_source
+Fig. 4a-c,figure,data/source_data/figure4_cfra_summary.csv,True,frozen_numerical_source
+Fig. 4a,figure,data/source_data/figure4_cfra_module_macro.csv,True,frozen_numerical_source
+Fig. 4a-c,figure,data/source_data/figure4_cfra_per_compound.csv,True,frozen_numerical_source
+Fig. 5a-b,figure,data/source_data/predictor_main_source.csv,True,frozen_numerical_source
+Supplementary Fig. S1,figure,figures/data/figure_3/figure3_p0_conditioned_report_results.csv,True,frozen_numerical_source
+Supplementary Fig. S2,figure,figures/data/figure_4/figure4_E_target_summary.csv,True,frozen_numerical_source
+Supplementary Fig. S2,figure,figures/data/figure_4/figure4_E_target_macro_contrasts.csv,True,frozen_numerical_source
+Supplementary Fig. S2,figure,figures/data/figure_4/figure4_E_direct_estimator_transfer_by_target.csv,True,frozen_numerical_source
+Supplementary Fig. S2,figure,figures/data/figure_4/figure4_E_direct_estimator_transfer_boundary.csv,True,frozen_numerical_source
+Supplementary Fig. S2,figure,figures/data/figure_4/figure4_E_drug_metrics.csv,True,frozen_numerical_source
+Supplementary Fig. S3,figure,data/source_data/figure4_supp_downstream_arm_metrics.csv,True,frozen_numerical_source
+Supplementary Fig. S3,figure,data/source_data/figure4_supp_downstream_contrasts.csv,True,frozen_numerical_source
+Supplementary Fig. S3,figure,data/source_data/figure4_supp_downstream_per_query.csv,True,frozen_numerical_source
+Table 1,table,TABLE1,True,derived_or_descriptive
+Supplementary Table S1,table,figures/data/figure_2/figure2_panelB.csv,True,frozen_numerical_source
+Supplementary Table S1,table,figures/data/figure_2/figure2_panelC.csv,True,frozen_numerical_source
+Supplementary Table S1,table,figures/data/figure_2/figure2_panelD_all_metrics.csv,True,frozen_numerical_source
+Supplementary Table S1,table,figures/data/figure_2/figure2_panelE_outer.csv,True,frozen_numerical_source
+Supplementary Table S1,table,figures/data/figure_2/figure2_panelD_weights.csv,True,frozen_numerical_source
+Supplementary Table S2,table,figures/data/figure_3/figure3_p0_conditioned_report_results.csv,True,frozen_numerical_source
+Supplementary Table S2,table,tables/inputs/prior_rows.json,True,frozen_numerical_source
+Supplementary Table S3,table,data/source_data/figure4_supp_downstream_contrasts.csv,True,frozen_numerical_source
+Supplementary Table S3,table,figures/data/figure_4/figure4_E_target_summary.csv,True,frozen_numerical_source
+Supplementary Table S3,table,figures/data/figure_4/figure4_E_direct_estimator_transfer_by_target.csv,True,frozen_numerical_source
+Supplementary Tables S4-S5,table,figures/data/figure_2/figure2_panelE.csv,True,frozen_numerical_source
+Supplementary Table S6,table,data/source_data/sciplex3_target_matrix_source.csv,True,frozen_numerical_source
+Table_1,table,data/reported_tables/Table_1_part_1.csv,True,displayed_values_not_raw_observations
+Table_S1,table,data/reported_tables/Table_S1_part_1.csv,True,displayed_values_not_raw_observations
+Table_S2,table,data/reported_tables/Table_S2_part_1.csv,True,displayed_values_not_raw_observations
+Table_S3,table,data/reported_tables/Table_S3_part_1.csv,True,displayed_values_not_raw_observations
+Table_S3,table,data/reported_tables/Table_S3_part_2.csv,True,displayed_values_not_raw_observations
+Table_S4,table,data/reported_tables/Table_S4_part_1.csv,True,displayed_values_not_raw_observations
+Table_S5,table,data/reported_tables/Table_S5_part_1.csv,True,displayed_values_not_raw_observations
+Table_S5,table,data/reported_tables/Table_S5_part_2.csv,True,displayed_values_not_raw_observations
+Table_S6,table,data/reported_tables/Table_S6_part_1.csv,True,displayed_values_not_raw_observations

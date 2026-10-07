@@ -1,0 +1,20 @@
+group_tex,column_1_tex,column_2_tex,column_3_tex,column_4_tex,column_5_tex,column_6_tex
+,GE -> CP,GE residual update - target-only CP estimate,Repeat agreement (Fisher z),"+0.02150\newline [+0.01937, +0.02366]",4023,
+,GE -> CP,Same-compound evidence - shuffled pairing,Repeat agreement (Fisher z),"+0.03742\newline [+0.03488, +0.03995]",4023,
+,GE -> CP,Same-compound evidence - matched control,Repeat agreement (Fisher z),"+0.01081\newline [+0.00903, +0.01261]",3538,
+,CP -> GE,Conditional update - target-only GE estimate,Repeat agreement (Fisher z),"+0.00937\newline [+0.00572, +0.01296]",3691,Pooled over three runs
+,CP -> GE,Same-compound evidence - shuffled pairing,Repeat agreement (Fisher z),"+0.01417\newline [+0.01002, +0.01832]",3691,Pooled over three runs
+,CP -> GE,Same-compound evidence - matched control,Repeat agreement (Fisher z),"+0.01139\newline [+0.00732, +0.01543]",3691,Pooled over three runs
+,CP -> GE,Joint prediction - target-only GE estimate,Repeat agreement (Fisher z),"+0.00492\newline [+0.00035, +0.00942]",3691,Pooled over three runs
+,CP -> GE,Conditional update - joint prediction,Repeat agreement (Fisher z),"+0.00446\newline [+0.00089, +0.00798]",3691,Pooled over three runs
+,Sequential CP/GE,GE|CP1,Repeat agreement (Fisher z),"+0.01942\newline [+0.01728, +0.02161]",3983,
+,Sequential CP/GE,GE|CP1+CP2,Repeat agreement (Fisher z),"+0.01487\newline [+0.01286, +0.01683]",3983,
+,Sequential CP/GE,CP2|CP1,Repeat agreement (Fisher z),"+0.02520\newline [+0.02175, +0.02862]",3983,
+,Sequential CP/GE,CP2|CP1+GE,Repeat agreement (Fisher z),"+0.02065\newline [+0.01742, +0.02379]",3983,
+,GE -> CP,Same-compound - exact-dose control,Repeat agreement (Fisher z),"+0.01854\newline [+0.01421, +0.02293]",715,Exact plate and dose matching
+,BBBC047; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"+0.01714\newline [+0.01391, +0.02038]",4023,Run 1; prior weight 0.300
+,BBBC047; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"+0.01517\newline [+0.01174, +0.01847]",4023,Run 2; prior weight 0.275
+,BBBC047; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"+0.02782\newline [+0.02382, +0.03192]",4023,Run 3; prior weight 0.300
+,cpg0004-LINCS; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"-0.00123\newline [-0.00301, +0.00049]",121,Run 1; prior weight 0.100
+,cpg0004-LINCS; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"-0.00233\newline [-0.00420, -0.00045]",121,Run 2; prior weight 0.100
+,cpg0004-LINCS; 1 support,Prior-augmented IMR - IMR,Repeat agreement (Fisher z),"-0.00220\newline [-0.00402, -0.00037]",121,Run 3; prior weight 0.100

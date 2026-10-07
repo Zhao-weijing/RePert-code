@@ -1,0 +1,10 @@
+dataset,budget,method,metric,comparison,point,ci_low,ci_high,n_compounds,bootstrap_unit,panel,metric_definition,interval_origin
+BBBC047,1,IMR,E,IMR-Raw,0.0608798288681875,0.0515743109483514,0.07052064382071,4023,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,1,LSO,E,LSO-Raw,0.0782800143742457,0.0688324238235108,0.0878641711426227,4023,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,1,IMCEB,E,IMCEB-Raw,0.0858825915961011,0.0776159684251695,0.0940607693806167,4023,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,2,IMR,E,IMR-Raw,0.0239741776923736,0.0155461531462991,0.0323623132998958,3982,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,2,LSO,E,LSO-Raw,0.0351641533362123,0.0268832824069648,0.0435503123342072,3982,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,2,IMCEB,E,IMCEB-Raw,0.0396461070750775,0.0328917477346732,0.0464265366263292,3982,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,3,IMR,E,IMR-Raw,0.0064649559174836,-0.0024564777840249,0.0152632562594078,3588,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,3,LSO,E,LSO-Raw,0.009831164373156,0.0011342574466221,0.0185447849843341,3588,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap
+BBBC047,3,IMCEB,E,IMCEB-Raw,0.0111659394650055,0.004592289880972,0.0176247195055721,3588,compound after 3-seed mean,D,delta in prediction-specific z_same-minus-z_foreign,original three-seed paired compound bootstrap

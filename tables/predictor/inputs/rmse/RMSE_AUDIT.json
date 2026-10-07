@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "metric": "mean_of_profile_RMSE",
+  "bootstrap_draws": 10000,
+  "bootstrap_ci": "pointwise percentile 2.5/97.5; shared paired draws for arms and differences",
+  "bbbc_seed_aggregation": "per-profile RMSE then five-seed mean then compound mean",
+  "sciplex_aggregation": "sqrt frozen ensemble condition MSE then dose mean within drug then drug mean within line then equal-line macro",
+  "sciplex_original_mse_macro_means_and_ci_reproduced": true,
+  "no_sqrt_of_aggregate_mse": true,
+  "no_inference_or_training": true,
+  "no_primary_endpoint_change": true,
+  "source_scope": "new supplementary metric, derived only from previously frozen outputs",
+  "formula": "sqrt(mean_features((prediction-raw_target)**2)); no added normalization",
+  "baseline_cancellation": "adding the same control baseline to prediction and target leaves RMSE unchanged",
+  "across_dataset_scale_comparison_allowed": false,
+  "bootstrap_seeds": {
+    "BBBC047_2R": 462985010,
+    "BBBC047_3R": 2199553244,
+    "BBBC047_4R": 2114731362,
+    "sciPlex3_Unseen": 1168038729,
+    "sciPlex3_Seen": 196694244
+  },
+  "numpy": "2.5.3",
+  "pandas": "3.0.1",
+  "inputs": [
+    {
+      "path": "paper\\editorial\\predictor_table_20260922\\rmse_inputs\\BBBC_RMSE_PER_COMPOUND_SEED.csv",
+      "sha256": "53e62807bedc6f300f213ea17393fc0523007eac9bc3fa11c331e28277231a28"
+    },
+    {
+      "path": "paper\\editorial\\predictor_table_20260922\\rmse_inputs\\BBBC_RMSE_EXTRACTION_AUDIT.json",
+      "sha256": "d8564d4fe7aed1639559f0bb9a2dd59f6f2743cb0aae136f1d192a1bcc0b02bc"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\CONFIRMATION_PER_CONDITION.csv",
+      "sha256": "fe9a8b0a9f13e71c72460404bec41c38caf89a1a455259edf66b7838c3c20b53"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\CONFIRMATION_PER_COMPOUND.csv",
+      "sha256": "06aa62330b1013f6739bf6aa33c72d4a2cf1ee2f0697e958b4affbc75955163a"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\SURFACE_MACRO_FULL_COMPARISON.csv",
+      "sha256": "27ad4e802fa727579b608abe29ffd9a38000f68de442f8392bbacf6e96c0c321"
+    }
+  ],
+  "summary_sha256": "36d0319e7a552a42d5f8f1fc21fa25436ab74898bad93a8a39f275156e0e907e"
+}

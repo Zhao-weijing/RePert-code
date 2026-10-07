@@ -1,0 +1,9 @@
+group_tex,column_1_tex,column_2_tex,column_3_tex,column_4_tex,column_5_tex,column_6_tex
+,MLP,"Capacity-matched control; 3 blocks, width 768","2,373,127",0.20667,0.22973,0.25429
+,ResNet,"Compact; 3 blocks, width 384","2,372,359",0.19929,0.22895,0.25850
+,ResNet,"Larger; 3 blocks, width 512","3,949,319",0.20121,0.23304,0.26481
+,FT-Transformer,Compact; four blocks,"2,704,303",0.19427,0.21876,0.22649
+,FT-Transformer,Larger; five blocks,"4,856,555",0.19706,0.21030,0.23857
+,TabM,Compact; $k=4$,"2,530,872",0.20169,0.22813,0.25812
+,TabM,Larger; $k=32$,"13,799,360",0.20877,0.23763,0.26826
+,ReCA,Repeat-aware estimator,--,0.22117,0.25416,0.28208

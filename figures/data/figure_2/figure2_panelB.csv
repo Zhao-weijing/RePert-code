@@ -1,0 +1,7 @@
+panel,dataset,budget,point,ci_low,ci_high,n_compounds,metric,interval_origin,seed_aggregation,bootstrap_rounds,bootstrap_seed
+B,BBBC047,1,0.0804581710259715,0.0713838812125974,0.0890602687322312,4023,teacher-minus-support held-repeat Fisher z,original direct-decomposition bootstrap,"mean within compound across 3407,42,2025",10000,
+B,cpg0004,1,0.13279013598802947,0.11411089299545836,0.15086623299382676,127,teacher-minus-support held-repeat Fisher z,derived paired compound bootstrap of frozen scores,"mean within compound across 3407,42,2025",10000,2026091001.0
+B,BBBC047,2,0.047567689516929,0.0397513381023366,0.0553768830893113,3982,teacher-minus-support held-repeat Fisher z,original direct-decomposition bootstrap,"mean within compound across 3407,42,2025",10000,
+B,cpg0004,2,0.0695891855883642,0.05705687334380204,0.08217083976167674,120,teacher-minus-support held-repeat Fisher z,derived paired compound bootstrap of frozen scores,"mean within compound across 3407,42,2025",10000,2026091002.0
+B,BBBC047,3,0.0288282104680246,0.020887071915371,0.0365718673387843,3588,teacher-minus-support held-repeat Fisher z,original direct-decomposition bootstrap,"mean within compound across 3407,42,2025",10000,
+B,cpg0004,3,0.03161352119888567,0.020179957571674297,0.04268162446811547,120,teacher-minus-support held-repeat Fisher z,derived paired compound bootstrap of frozen scores,"mean within compound across 3407,42,2025",10000,2026091003.0

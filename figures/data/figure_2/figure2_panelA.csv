@@ -1,0 +1,7 @@
+panel,modality,condition,point,ci_low,ci_high,n_compounds,statistic,interval_origin,bootstrap_rounds,plotted,fraction_positive
+A,CP,one_to_one,0.13919218125534238,0.13554327158732543,0.14259859790178023,18082,median compound same-minus-null PCC,original frozen compound bootstrap,2000,True,
+A,CP,two_to_two,0.24312283889781675,0.23785656125973162,0.24838930793121652,18082,median compound same-minus-null PCC,original frozen compound bootstrap,2000,True,
+A,CP,paired_aggregation_gain,0.08612429176233742,0.08453236079616,0.08767551939913117,18082,median of within-compound PCC differences,original frozen compound bootstrap,2000,True,0.8218117464882203
+A,GE,one_to_one,0.0294914751578264,0.00033554233245579324,0.10546554280263,38,median compound same-minus-null PCC,original frozen compound bootstrap,2000,False,
+A,GE,two_to_two,0.0631063944263507,0.01678575508486189,0.19180115223988897,38,median compound same-minus-null PCC,original frozen compound bootstrap,2000,False,
+A,GE,paired_aggregation_gain,0.035588132108466314,0.012884612128248235,0.07606542145445001,38,median of within-compound PCC differences,original frozen compound bootstrap,2000,False,0.7105263157894737

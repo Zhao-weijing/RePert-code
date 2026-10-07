@@ -1,0 +1,70 @@
+% Generated from frozen metrics. Do not edit individual numeric cells.
+% Dependencies: booktabs, array, xcolor, colortbl, caption, helvet.
+% colortbl and caption must be available in the host document preamble.
+% All definitions are local to this input; no resizebox or raster table.
+\begingroup
+\sffamily
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.0}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\arrayrulecolor[gray]{0.4}
+\captionsetup{font={small,sf},labelfont=bf,textfont=bf,justification=raggedright,singlelinecheck=false,labelsep=space,skip=7pt}
+\newcommand{\ReCATableCell}[3]{\parbox[t]{\linewidth}{\raggedright #1\\[-0.5pt]{\fontsize{7.2}{8.3}\selectfont\color[gray]{0.25}[#2, #3]}}}
+\newcommand{\ReCATableHead}[1]{\rule{0pt}{12pt}\textbf{#1}}
+\newcommand{\ReCATableStart}{\begin{tabular}{p{17mm}p{12mm}p{25mm}*{3}{p{\dimexpr(\linewidth-54mm-12\tabcolsep)/3\relax}}}}
+
+\begin{table}[p]
+\centering
+\caption[Cell-line-resolved sci-Plex3 prediction with ReCA-derived supervision]{\textbar\enspace Cell-line-resolved sci-Plex3 prediction with ReCA-derived supervision}
+\label{tab:predictor-celllines}
+\fontsize{8.5}{10}\selectfont
+\ReCATableStart
+\toprule[0.7pt]
+\rowcolor[gray]{0.86}\multicolumn{6}{l}{\rule{0pt}{13pt}\textbf{sci-Plex3: unseen-drug cross-cell transfer}}\\[4pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.92}\ReCATableHead{Target cell} & \ReCATableHead{\textit{n}} & \ReCATableHead{Method} & \ReCATableHead{PCC $\uparrow$} & \ReCATableHead{$\Delta$PCC $\uparrow$} & \ReCATableHead{RMSE $\downarrow$} \\[4pt]
+\midrule[0.5pt]
+\rule{0pt}{12pt}A549 & 36 & Raw & \ReCATableCell{0.8231}{0.8188}{0.8274} & \ReCATableCell{\textbf{0.0049}}{0.0005}{0.0095} & \ReCATableCell{0.8318}{0.8202}{0.8437} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.8277}}{0.8235}{0.8320} & \ReCATableCell{0.0044}{\ensuremath{-}0.0007}{0.0095} & \ReCATableCell{\textbf{0.8226}}{0.8107}{0.8347} \\[4pt]
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0046}{0.0044}{0.0048} & \ReCATableCell{\ensuremath{-}0.0005}{\ensuremath{-}0.0047}{0.0035} & \ReCATableCell{\ensuremath{-}0.0092}{\ensuremath{-}0.0097}{\ensuremath{-}0.0087} \\[12pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt}K562 & 36 & Raw & \ReCATableCell{0.7899}{0.7848}{0.7946} & \ReCATableCell{0.0035}{\ensuremath{-}0.0018}{0.0090} & \ReCATableCell{0.8760}{0.8646}{0.8887} \\[4pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.7937}}{0.7887}{0.7984} & \ReCATableCell{\textbf{0.0101}}{0.0052}{0.0152} & \ReCATableCell{\textbf{0.8699}}{0.8583}{0.8828} \\[4pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0038}{0.0037}{0.0040} & \ReCATableCell{+0.0066}{0.0046}{0.0086} & \ReCATableCell{\ensuremath{-}0.0061}{\ensuremath{-}0.0066}{\ensuremath{-}0.0056} \\[12pt]
+\midrule[0.3pt]
+\rule{0pt}{12pt}MCF7 & 36 & Raw & \ReCATableCell{0.9052}{0.9007}{0.9091} & \ReCATableCell{0.0120}{0.0075}{0.0168} & \ReCATableCell{0.5394}{0.5299}{0.5503} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.9154}}{0.9109}{0.9194} & \ReCATableCell{\textbf{0.0143}}{0.0094}{0.0191} & \ReCATableCell{\textbf{0.5030}}{0.4927}{0.5149} \\[4pt]
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0103}{0.0100}{0.0106} & \ReCATableCell{+0.00223}{\ensuremath{-}0.00005}{0.00452} & \ReCATableCell{\ensuremath{-}0.0364}{\ensuremath{-}0.0377}{\ensuremath{-}0.0351} \\[12pt]
+
+\midrule[0.7pt]
+\rowcolor[gray]{0.86}\multicolumn{6}{l}{\rule{0pt}{13pt}\textbf{sci-Plex3: seen-drug cross-cell transfer}}\\[4pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.92}\ReCATableHead{Target cell} & \ReCATableHead{\textit{n}} & \ReCATableHead{Method} & \ReCATableHead{PCC $\uparrow$} & \ReCATableHead{$\Delta$PCC $\uparrow$} & \ReCATableHead{RMSE $\downarrow$} \\[4pt]
+\midrule[0.5pt]
+\rule{0pt}{12pt}A549 & 183 & Raw & \ReCATableCell{0.8173}{0.8138}{0.8204} & \ReCATableCell{\textbf{0.0094}}{0.0060}{0.0132} & \ReCATableCell{0.8438}{0.8365}{0.8517} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.8229}}{0.8193}{0.8260} & \ReCATableCell{0.0080}{0.0046}{0.0117} & \ReCATableCell{\textbf{0.8325}}{0.8250}{0.8406} \\[4pt]
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0056}{0.0054}{0.0057} & \ReCATableCell{\ensuremath{-}0.0014}{\ensuremath{-}0.0034}{0.0004} & \ReCATableCell{\ensuremath{-}0.0113}{\ensuremath{-}0.0116}{\ensuremath{-}0.0109} \\[12pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt}K562 & 183 & Raw & \ReCATableCell{0.7869}{0.7829}{0.7904} & \ReCATableCell{0.0046}{0.0013}{0.0082} & \ReCATableCell{0.8810}{0.8729}{0.8900} \\[4pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.7910}}{0.7870}{0.7946} & \ReCATableCell{\textbf{0.0119}}{0.0086}{0.0154} & \ReCATableCell{\textbf{0.8736}}{0.8654}{0.8828} \\[4pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0041}{0.0040}{0.0043} & \ReCATableCell{+0.0073}{0.0061}{0.0085} & \ReCATableCell{\ensuremath{-}0.0074}{\ensuremath{-}0.0077}{\ensuremath{-}0.0072} \\[12pt]
+\midrule[0.3pt]
+\rule{0pt}{12pt}MCF7 & 183 & Raw & \ReCATableCell{0.8971}{0.8930}{0.9007} & \ReCATableCell{0.0127}{0.0106}{0.0148} & \ReCATableCell{0.5605}{0.5528}{0.5694} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA & \ReCATableCell{\textbf{0.9087}}{0.9044}{0.9123} & \ReCATableCell{\textbf{0.0131}}{0.0108}{0.0153} & \ReCATableCell{\textbf{0.5208}}{0.5124}{0.5305} \\[4pt]
+\rule{0pt}{12pt} &  & \textit{Difference} & \ReCATableCell{+0.0115}{0.0113}{0.0118} & \ReCATableCell{+0.0004}{\ensuremath{-}0.0012}{0.0020} & \ReCATableCell{\ensuremath{-}0.0396}{\ensuremath{-}0.0406}{\ensuremath{-}0.0386} \\[12pt]
+\bottomrule[0.7pt]
+\end{tabular}
+\par\vspace{5pt}\begin{minipage}{\linewidth}\fontsize{7.5}{9.2}\selectfont\raggedright
+Raw (M0) and ReCA (M1) are capacity-matched predictors evaluated on the same raw target. Values are means with pointwise 95\% CIs below. $\uparrow$/$\downarrow$ indicate higher/lower is better. Bold denotes the better method mean within each setting, not statistical significance. Difference rows show ReCA minus Raw; negative RMSE differences indicate improvement. Each drug contributes its dose-averaged score from the original five-seed prediction ensemble. $n$ denotes drugs within the indicated target line; the same drug can occur in multiple target-line evaluations.
+
+PCC is full-profile correlation after adding the matched Vehicle baseline; $\Delta$PCC is correlation of the control-subtracted response. RMSE is the square root of each condition's saved MSE, averaged across doses within drug and then drugs, not the square root of the aggregate MSE. It is a supplementary post-hoc metric on frozen outputs, with no refitting. These cross-cell results are historical evaluations. All CIs use 10,000 paired-drug resamples and are not multiplicity-adjusted. Original correlation values and paired intervals are retained; RMSE and own-arm intervals use the saved within-target-line bootstrap indices. Extra precision is retained where rounding would obscure an interval's sign.
+\end{minipage}
+\end{table}
+\endgroup

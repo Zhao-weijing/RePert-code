@@ -1,0 +1,5 @@
+* text=auto
+*.csv text eol=lf
+*.py text eol=lf
+*.pdf binary
+*.xlsx binary

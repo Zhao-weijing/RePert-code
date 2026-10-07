@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "input_kind": "synthetic_software_example",
+  "fit_compounds": 32,
+  "calibration_compounds": 12,
+  "query_compounds": 5,
+  "feature_dimension": 16,
+  "role_overlap": 0,
+  "prediction_finite": true,
+  "scientific_validation": false
+}

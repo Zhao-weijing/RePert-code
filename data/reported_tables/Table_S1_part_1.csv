@@ -1,0 +1,33 @@
+group_tex,column_1_tex,column_2_tex,column_3_tex,column_4_tex,column_5_tex,column_6_tex
+,BBBC047 CP,One measurement per group,Median excess agreement (PCC),"+0.13919\newline [+0.13554, +0.14260]",18082,
+,BBBC047 CP,Two measurements per group,Median excess agreement (PCC),"+0.24312\newline [+0.23786, +0.24839]",18082,
+,BBBC047 CP,Two per group - one per group,Median paired change in PCC,"+0.08612\newline [+0.08453, +0.08768]",18082,
+,BBBC047 GE,One measurement per group,Median excess agreement (PCC),"+0.02949\newline [+0.00034, +0.10547]",38,
+,BBBC047 GE,Two measurements per group,Median excess agreement (PCC),"+0.06311\newline [+0.01679, +0.19180]",38,
+,BBBC047 GE,Two per group - one per group,Median paired change in PCC,"+0.03559\newline [+0.01288, +0.07607]",38,
+,BBBC047 CP; 1 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.08046\newline [+0.07138, +0.08906]",4023,
+,cpg0004 CP; 1 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.13279\newline [+0.11411, +0.15087]",127,Pooled over three runs
+,BBBC047 CP; 2 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.04757\newline [+0.03975, +0.05538]",3982,
+,cpg0004 CP; 2 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.06959\newline [+0.05706, +0.08217]",120,Pooled over three runs
+,BBBC047 CP; 3 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.02883\newline [+0.02089, +0.03657]",3588,
+,cpg0004 CP; 3 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.03161\newline [+0.02018, +0.04268]",120,Pooled over three runs
+,BBBC047 GE; 1 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.06976\newline [+0.06102, +0.07868]",3691,
+,BBBC047 GE; 2 support,IMR - measurement mean,Repeat agreement (Fisher z),"+0.08762\newline [+0.07710, +0.09792]",3121,
+,BBBC047 CP; 1 support,IMR - measurement mean,Specificity (Fisher z),"+0.06088\newline [+0.05157, +0.07052]",4023,
+,BBBC047 CP; 1 support,Aggregated-target IMR - measurement mean,Specificity (Fisher z),"+0.07828\newline [+0.06883, +0.08786]",4023,
+,BBBC047 CP; 1 support,Empirical-Bayes shrinkage - measurement mean,Specificity (Fisher z),"+0.08588\newline [+0.07762, +0.09406]",4023,
+,BBBC047 CP; 2 support,IMR - measurement mean,Specificity (Fisher z),"+0.02397\newline [+0.01555, +0.03236]",3982,
+,BBBC047 CP; 2 support,Aggregated-target IMR - measurement mean,Specificity (Fisher z),"+0.03516\newline [+0.02688, +0.04355]",3982,
+,BBBC047 CP; 2 support,Empirical-Bayes shrinkage - measurement mean,Specificity (Fisher z),"+0.03965\newline [+0.03289, +0.04643]",3982,
+,BBBC047 CP; 3 support,IMR - measurement mean,Specificity (Fisher z),"+0.00646\newline [-0.00246, +0.01526]",3588,
+,BBBC047 CP; 3 support,Aggregated-target IMR - measurement mean,Specificity (Fisher z),"+0.00983\newline [+0.00113, +0.01854]",3588,
+,BBBC047 CP; 3 support,Empirical-Bayes shrinkage - measurement mean,Specificity (Fisher z),"+0.01117\newline [+0.00459, +0.01762]",3588,
+,BBBC047; 1 support,ReCA - best single estimator,Specificity (Fisher z),"+0.00059\newline [-0.00138, +0.00256]",2423,
+,BBBC047; 3 support,ReCA - best single estimator,Specificity (Fisher z),"+0.00182\newline [+0.00100, +0.00264]",2166,
+,cpg0004-LINCS; 1 support,ReCA - best single estimator,Specificity (Fisher z),"+0.01580\newline [+0.00964, +0.02184]",189,
+,cpg0004-LINCS; 3 support,ReCA - best single estimator,Specificity (Fisher z),"+0.01052\newline [+0.00625, +0.01485]",185,
+,Across four conditions,ReCA - best single estimator,Specificity (Fisher z),"+0.00718\newline [+0.00529, +0.00913]",4,Equal-weight mean of four conditions; n counts conditions
+,BBBC047; 1 support,ReCA - support mean,Specificity (Fisher z),+0.02915,2423,Point estimate
+,BBBC047; 3 support,ReCA - support mean,Specificity (Fisher z),+0.01680,2166,Point estimate
+,cpg0004-LINCS; 1 support,ReCA - support mean,Specificity (Fisher z),+0.06934,189,Point estimate
+,cpg0004-LINCS; 3 support,ReCA - support mean,Specificity (Fisher z),+0.05120,185,Point estimate

@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "main_rows": 12,
+  "supplement_rows": 18,
+  "sciplex_matrix_rows": 9,
+  "main_table_datasets": [
+    "BBBC047"
+  ],
+  "bbbc047_displayed_arms": [
+    "Raw (M0)",
+    "ReCA+Res (M2)"
+  ],
+  "bbbc047_displayed_metrics": [
+    "PCC",
+    "deltaPCC",
+    "RMSE",
+    "E"
+  ],
+  "sciplex_matrix_surfaces": [
+    "own_cell_unseen",
+    "cross_cell_unseen",
+    "cross_cell_seen"
+  ],
+  "sciplex_matrix_arms": [
+    "Raw (M0)",
+    "ReCA (M1)",
+    "ReCA+Res (M2)"
+  ],
+  "sciplex_matrix_metrics": [
+    "PCC",
+    "deltaPCC",
+    "E"
+  ],
+  "celllines_table_arms": [
+    "Raw (M0)",
+    "ReCA (M1)"
+  ],
+  "original_results_unchanged": true,
+  "own_arm_ci_in_every_source_record": true,
+  "paired_ci_in_every_source_record": true,
+  "main_display_rows": 6,
+  "supplement_display_rows": 18,
+  "main_difference_rows_displayed": false,
+  "main_differences_moved_to_supplement": false,
+  "sciplex_own_ci_source": "previous audited replay of frozen within-line macro bootstrap indices",
+  "no_training_or_selection": true,
+  "supplementary_rmse_added": true,
+  "frozen_correlation_values_and_cis_unchanged": true,
+  "preferred_directions": {
+    "PCC": "up",
+    "deltaPCC": "up",
+    "RMSE": "down"
+  },
+  "inputs": [
+    {
+      "path": "analysis\\predictor_supervision\\bbbc047\\results\\frozen_evaluation\\TEST_METHOD_SUMMARY.csv",
+      "sha256": "6e8ebcd0c54c74574d7dfa1645a0a5b2a844339a47670ce9a26582cde1b8c24c"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\bbbc047\\results\\frozen_evaluation\\TEST_CONTRASTS.csv",
+      "sha256": "88394c9436f66b9bcb81f4ab4270d0c9c889dbace372f2d519051999f66e656a"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\SURFACE_MACRO_FULL_COMPARISON.csv",
+      "sha256": "27ad4e802fa727579b608abe29ffd9a38000f68de442f8392bbacf6e96c0c321"
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\CONFIRMATION_CONTRASTS_ALL.csv",
+      "sha256": "6b5baf2ce3b8f6f65de5819d9abeb59f11b960608404e875f3b4077da77dd0db"
+    },
+    {
+      "path": "tables\\predictor\\inputs\\arm_estimates\\bc_sciplex3_arm_means_and_ci.csv",
+      "sha256": "93990adb9628c9053eaf36ed762d9bd9443439eab91ca17a8df19939814873ac"
+    },
+    {
+      "path": "tables\\predictor\\inputs\\arm_estimates\\data_audit.json",
+      "sha256": "044b49cce28fc93151cd77ef7ac6a805d0864852e23cdb3686edd5aa0709ac49"
+    },
+    {
+      "path": "tables\\predictor\\inputs\\rmse\\RMSE_SUMMARY.csv",
+      "sha256": "36d0319e7a552a42d5f8f1fc21fa25436ab74898bad93a8a39f275156e0e907e"
+    },
+    {
+      "path": "tables\\predictor\\inputs\\rmse\\RMSE_AUDIT.json",
+      "sha256": "c5659f6a11085e6f4e9d8b3029f165ca1d5fb745370823a3645c6e943654aecb"
+    }
+  ],
+  "output_hashes": {
+    "predictor_tables_preview.tex": "86a2014f138694ee866443d8e93f72ce963bc824b5b21ef888c3c7501d581078",
+    "table_predictor_celllines.tex": "b34ec1c8fd0d7bf00ad733f7e31fc9171ab32b7d6241360e5c13c665a4a9883a",
+    "table_predictor_supervision.tex": "4c32a61f480accc164df82bc8f95f4f4649b35d6744266ad57081f70932e8b6d",
+    "table_predictor_supervision_inline.tex": "c653888887edeb94a8ec7c088d068da11b6f2c300fe966c0b49f2c062bad7bf9"
+  },
+  "reference_style": {
+    "layout": "metrics_in_columns_methods_in_rows",
+    "neutral_grey_headers": true,
+    "neutral_scenario_banding": true,
+    "bold_rule": "better point estimate within setting and metric",
+    "references": []
+  }
+}

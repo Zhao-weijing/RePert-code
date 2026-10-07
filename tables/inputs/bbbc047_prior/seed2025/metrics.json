@@ -1,0 +1,520 @@
+{
+  "definition": "Primary 1->1: exactly one real support plate and one distinct held plate per compound. The virtual C0 prior is only a train-only molecule-plus-baseline correction after one support is observed.",
+  "device": "cuda",
+  "fixed_lambda": {
+    "grid": [
+      0.0,
+      0.025,
+      0.05,
+      0.075,
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3
+    ],
+    "selected_on_validation_one_to_one_rsf": 0.3,
+    "validation_scores": {
+      "0.0": {
+        "model_excess_z_mean": 0.2754052325279295,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.3380286783886193
+      },
+      "0.025": {
+        "model_excess_z_mean": 0.27893231240290617,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.355164641929935
+      },
+      "0.05": {
+        "model_excess_z_mean": 0.2822187540061076,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.371131488581939
+      },
+      "0.075": {
+        "model_excess_z_mean": 0.2852486058063436,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.3858517194314819
+      },
+      "0.1": {
+        "model_excess_z_mean": 0.28800906621467004,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.3992631392436403
+      },
+      "0.125": {
+        "model_excess_z_mean": 0.29049000146646725,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.4113165141401878
+      },
+      "0.15": {
+        "model_excess_z_mean": 0.29268392225486506,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.421975458075436
+      },
+      "0.175": {
+        "model_excess_z_mean": 0.29458620619220666,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.4312175136429277
+      },
+      "0.2": {
+        "model_excess_z_mean": 0.2961952677724606,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.439034977820754
+      },
+      "0.225": {
+        "model_excess_z_mean": 0.2975124393905628,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.4454343239159726
+      },
+      "0.25": {
+        "model_excess_z_mean": 0.2985415362945652,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.4504340879282867
+      },
+      "0.275": {
+        "model_excess_z_mean": 0.2992882039975457,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.4540616980163164
+      },
+      "0.3": {
+        "model_excess_z_mean": 0.29975920712082976,
+        "molecule_count": 4024,
+        "replicate_excess_z_mean": 0.20582909542686223,
+        "rsf": 1.456350019413771
+      }
+    }
+  },
+  "foreign_mapping": {
+    "common_molecule_count": 4020,
+    "common_molecule_coverage": 0.9992542878448919,
+    "eligible_pair_count": 4028,
+    "eligible_reference_pair_count": 4020,
+    "pair_count": 4040,
+    "reference_pair_count": 4023,
+    "reference_pair_coverage": 0.9992542878448919
+  },
+  "gate": {
+    "best_epoch": 7,
+    "checkpoint_compounds": 1204,
+    "checkpoint_mse": 0.8802787661552429,
+    "checkpoint_source": "official_train_internal",
+    "fit_compounds": 10917
+  },
+  "guardrails": [
+    "no GE",
+    "single support and held plate are deterministic and distinct",
+    "teacher/C0/gate checkpoints are train-internal",
+    "fixed lambda uses 1->1 validation RSF only",
+    "test target never enters model fitting",
+    "strict selected-pair RSF plus held delta PCC are reported",
+    "smoke is not evidence"
+  ],
+  "lambda_summary": {
+    "test_mean": 0.3001846969127655,
+    "validation_mean": 0.30200645327568054
+  },
+  "matched_foreign_common_summaries": {
+    "c0_prior": {
+      "held_delta_pcc_mean": 0.2750827827415127,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.23112848190250318,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.0779344345387933
+    },
+    "one_posterior_adaptive": {
+      "held_delta_pcc_mean": 0.34998399603017427,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.3130825960526509,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.460151117517017
+    },
+    "one_posterior_fixed": {
+      "held_delta_pcc_mean": 0.3493551272730668,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.31274404587454524,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.4585721909745355
+    },
+    "one_posterior_matched_foreign_prior": {
+      "held_delta_pcc_mean": 0.34035077361986366,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.3011548846848648,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.4045227903513497
+    },
+    "one_posterior_shuffled_prior": {
+      "held_delta_pcc_mean": 0.3201570200493381,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.27623229946618755,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.2882891155406784
+    },
+    "one_support": {
+      "held_delta_pcc_mean": 0.2591056267145202,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.214417940921791,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.0
+    },
+    "one_teacher": {
+      "held_delta_pcc_mean": 0.32881493648494375,
+      "held_delta_pcc_molecule_count": 4020,
+      "model_excess_z_mean": 0.2849432039854566,
+      "molecule_count": 4020,
+      "replicate_excess_z_mean": 0.214417940921791,
+      "rsf": 1.3289149348252984
+    }
+  },
+  "pair_manifest": {
+    "pair_counts": {
+      "test": 4040,
+      "train": 12121,
+      "valid": 4041
+    },
+    "seed": 3407,
+    "two_support_p_ge_3_counts": {
+      "test": 4000,
+      "train": 12003,
+      "valid": 4016
+    }
+  },
+  "paired_bootstrap": {
+    "adaptive_minus_fixed": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.000619923601492234,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          -0.00045963522099394294,
+          0.0017509457769954461
+        ],
+        "molecule_count": 4023
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.0003285675141693717,
+        "candidate_minus_reference_excess_z_ci95": [
+          -0.001109812204446884,
+          0.0017869933346265664
+        ],
+        "candidate_minus_reference_rsf": 0.0015327216935945298,
+        "candidate_minus_reference_rsf_ci95": [
+          -0.005135585427040667,
+          0.008344375014055182
+        ],
+        "molecule_count": 4023
+      }
+    },
+    "adaptive_minus_teacher": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.021176231042464383,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          0.0179293839909817,
+          0.024557976606202337
+        ],
+        "molecule_count": 4023
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.028145763835110364,
+        "candidate_minus_reference_excess_z_ci95": [
+          0.02417169532457801,
+          0.0322542741140063
+        ],
+        "candidate_minus_reference_rsf": 0.13129606839530772,
+        "candidate_minus_reference_rsf_ci95": [
+          0.11149059057874086,
+          0.1524349061877228
+        ],
+        "molecule_count": 4023
+      }
+    },
+    "correct_minus_matched_foreign_common": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.009633222410310642,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          0.007057572117422361,
+          0.012134681082038322
+        ],
+        "molecule_count": 4020
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.01192771136778611,
+        "candidate_minus_reference_excess_z_ci95": [
+          0.009011124760651235,
+          0.014829840252807414
+        ],
+        "candidate_minus_reference_rsf": 0.055628327165667235,
+        "candidate_minus_reference_rsf_ci95": [
+          0.04202423067778853,
+          0.06964335156802255
+        ],
+        "molecule_count": 4020
+      }
+    },
+    "correct_minus_shuffled": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.029820591670663883,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          0.026561780395581894,
+          0.03309393930724646
+        ],
+        "molecule_count": 4023
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.03684100220349391,
+        "candidate_minus_reference_excess_z_ci95": [
+          0.03307530929417795,
+          0.040629592089691025
+        ],
+        "candidate_minus_reference_rsf": 0.1718581443871714,
+        "candidate_minus_reference_rsf_ci95": [
+          0.1525433565577086,
+          0.19215643437039762
+        ],
+        "molecule_count": 4023
+      }
+    },
+    "fixed_minus_teacher": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.020556307440972147,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          0.0172822666556328,
+          0.02373146414812337
+        ],
+        "molecule_count": 4023
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.027817196320940995,
+        "candidate_minus_reference_excess_z_ci95": [
+          0.02382101914916017,
+          0.03192193765924069
+        ],
+        "candidate_minus_reference_rsf": 0.1297633467017132,
+        "candidate_minus_reference_rsf_ci95": [
+          0.10999113745909869,
+          0.15070116676615608
+        ],
+        "molecule_count": 4023
+      }
+    },
+    "teacher_minus_support": {
+      "delta_pcc": {
+        "candidate_minus_reference_delta_pcc": 0.06960074397313268,
+        "candidate_minus_reference_delta_pcc_ci95": [
+          0.06299997210297702,
+          0.07618429803669267
+        ],
+        "molecule_count": 4023
+      },
+      "excess_z": {
+        "candidate_minus_reference_excess_z": 0.07042292490932217,
+        "candidate_minus_reference_excess_z_ci95": [
+          0.06163583845874108,
+          0.07916015656070043
+        ],
+        "candidate_minus_reference_rsf": 0.3285131368137817,
+        "candidate_minus_reference_rsf_ci95": [
+          0.27781916282883434,
+          0.3831796980538391
+        ],
+        "molecule_count": 4023
+      }
+    }
+  },
+  "prior": {
+    "full_train_internal_checkpoint": {
+      "best_epoch": 22,
+      "checkpoint_compounds": 1182,
+      "checkpoint_mse": 0.9309974015263334,
+      "checkpoint_source": "official_train_internal",
+      "fit_compounds": 10993
+    },
+    "oof": {
+      "definition": "C0 prior is OOF for every posterior-training compound; all C0 checkpoints are selected within official training.",
+      "folds": [
+        {
+          "best_epoch": 8,
+          "checkpoint_compounds": 980,
+          "checkpoint_mse": 0.9213493731557106,
+          "checkpoint_source": "official_train_internal",
+          "fit_compounds": 8717,
+          "fold": 0,
+          "held_compounds": 2478
+        },
+        {
+          "best_epoch": 13,
+          "checkpoint_compounds": 913,
+          "checkpoint_mse": 0.858643415658393,
+          "checkpoint_source": "official_train_internal",
+          "fit_compounds": 8869,
+          "fold": 1,
+          "held_compounds": 2393
+        },
+        {
+          "best_epoch": 7,
+          "checkpoint_compounds": 958,
+          "checkpoint_mse": 0.8303879050222966,
+          "checkpoint_source": "official_train_internal",
+          "fit_compounds": 8760,
+          "fold": 2,
+          "held_compounds": 2457
+        },
+        {
+          "best_epoch": 6,
+          "checkpoint_compounds": 919,
+          "checkpoint_mse": 0.9173867202427753,
+          "checkpoint_source": "official_train_internal",
+          "fit_compounds": 8818,
+          "fold": 3,
+          "held_compounds": 2438
+        },
+        {
+          "best_epoch": 5,
+          "checkpoint_compounds": 945,
+          "checkpoint_mse": 0.8680267455085876,
+          "checkpoint_source": "official_train_internal",
+          "fit_compounds": 8821,
+          "fold": 4,
+          "held_compounds": 2409
+        }
+      ]
+    }
+  },
+  "seed": 2025,
+  "shuffled_prior": {
+    "fixed_points": 0,
+    "mapping_seed": 2515410539179481670,
+    "molecule_count": 4060
+  },
+  "smoke": false,
+  "summaries": {
+    "c0_prior": {
+      "held_delta_pcc_mean": 0.27495962200540497,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.23103407541623236,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.077741785414132
+    },
+    "one_posterior_adaptive": {
+      "held_delta_pcc_mean": 0.3498049350215372,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.31293736085400975,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.4598092052090894
+    },
+    "one_posterior_fixed": {
+      "held_delta_pcc_mean": 0.349185011420045,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.3126087933398404,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.4582764835154949
+    },
+    "one_posterior_shuffled_prior": {
+      "held_delta_pcc_mean": 0.3199843433508734,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.27609635865051585,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.287951060821918
+    },
+    "one_support": {
+      "held_delta_pcc_mean": 0.25902796000594014,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.2143686721095772,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.0
+    },
+    "one_teacher": {
+      "held_delta_pcc_mean": 0.3286287039790729,
+      "held_delta_pcc_molecule_count": 4023,
+      "model_excess_z_mean": 0.28479159701889945,
+      "molecule_count": 4023,
+      "replicate_excess_z_mean": 0.2143686721095772,
+      "rsf": 1.3285131368137817
+    }
+  },
+  "teacher": {
+    "definition": "Each OOF teacher fits and checkpoints only on other official-training compounds; it never sees the compound or held CP plate that it predicts.",
+    "eligible_p_ge_3": 12121,
+    "folds": [
+      {
+        "best_epoch": 10,
+        "checkpoint_compounds": 979,
+        "checkpoint_mse": 0.8641568094157102,
+        "fit_compounds": 8672,
+        "fold": 0,
+        "held_compounds": 2470
+      },
+      {
+        "best_epoch": 8,
+        "checkpoint_compounds": 982,
+        "checkpoint_mse": 0.8486538389792511,
+        "fit_compounds": 8759,
+        "fold": 1,
+        "held_compounds": 2380
+      },
+      {
+        "best_epoch": 7,
+        "checkpoint_compounds": 1000,
+        "checkpoint_mse": 0.8714544415473938,
+        "fit_compounds": 8678,
+        "fold": 2,
+        "held_compounds": 2443
+      },
+      {
+        "best_epoch": 6,
+        "checkpoint_compounds": 997,
+        "checkpoint_mse": 0.8144045005232066,
+        "fit_compounds": 8694,
+        "fold": 3,
+        "held_compounds": 2430
+      },
+      {
+        "best_epoch": 8,
+        "checkpoint_compounds": 986,
+        "checkpoint_mse": 0.8708104363077794,
+        "fit_compounds": 8737,
+        "fold": 4,
+        "held_compounds": 2398
+      }
+    ]
+  },
+  "test_reference_molecule_count": 4023,
+  "two_support_auxiliary": {
+    "definition": "Auxiliary raw held-plate PCC comparison on P>=3 molecules sharing the identical support S and held H; two-support mean uses S plus the locked extra support R.",
+    "molecule_count": 3983,
+    "one_posterior_fixed_held_delta_pcc_mean": 0.34871959819206455,
+    "one_posterior_fixed_minus_two_support_mean_delta_pcc": {
+      "candidate_minus_reference_delta_pcc": 0.0391503517470069,
+      "candidate_minus_reference_delta_pcc_ci95": [
+        0.03205839369766988,
+        0.046302649027472054
+      ],
+      "molecule_count": 3983
+    },
+    "two_support_mean_held_delta_pcc_mean": 0.3095692464450577
+  },
+  "version": "BBBC047-Prior-Evidence-Posterior-OneToOne-2026-08-29"
+}

@@ -1,0 +1,2 @@
+endpoint,raw,cfra,cfra_minus_raw,ci_low,ci_high,n_compounds,bootstrap_unit,bootstrap_rounds,status,aggregation
+A_macro_module_fisher_z,0.5927154236448852,0.7338810426151294,0.14116561897024427,0.13121424521713318,0.15109033151004742,291,compound,10000,HISTORICAL_LOCKED_RECOMPUTE,"mean seven modules within physical view, then mean dose/rotation/seed within compound"

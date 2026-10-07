@@ -1,0 +1,19 @@
+endpoint,target_cell_line,arm,metric,estimate,ci_low,ci_high,n_drugs,bootstrap_draws,bootstrap_unit
+pure_seen,A549,raw,Same-Foreign excess Fisher-z,0.000928439313781,-0.0016212933207,0.00360850437825,183,10000,drug
+pure_seen,A549,cfra,Same-Foreign excess Fisher-z,0.00584924370152,0.00350786751027,0.00835669352429,183,10000,drug
+pure_seen,A549,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.00492080438774,0.00351898300851,0.00630665471711,183,10000,drug
+pure_seen,K562,raw,Same-Foreign excess Fisher-z,-0.00105311097675,-0.00337932363109,0.00126239462117,183,10000,drug
+pure_seen,K562,cfra,Same-Foreign excess Fisher-z,0.00801670982889,0.00501834696627,0.011224812022,183,10000,drug
+pure_seen,K562,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.00906982080564,0.00702370542615,0.0113707826291,183,10000,drug
+pure_seen,MCF7,raw,Same-Foreign excess Fisher-z,0.00126642849992,-0.00127911850377,0.00379594556479,183,10000,drug
+pure_seen,MCF7,cfra,Same-Foreign excess Fisher-z,0.00460719640963,0.00169766533317,0.00759511300721,183,10000,drug
+pure_seen,MCF7,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.0033407679097,0.000671584894931,0.00597471400264,183,10000,drug
+cold_confirmation,A549,raw,Same-Foreign excess Fisher-z,-6.3853563584e-05,-0.00438753853407,0.00402685712912,36,10000,drug
+cold_confirmation,A549,cfra,Same-Foreign excess Fisher-z,0.00619997349397,0.00190475991719,0.0105088616558,36,10000,drug
+cold_confirmation,A549,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.00626382705755,0.00312693984643,0.00938179165081,36,10000,drug
+cold_confirmation,K562,raw,Same-Foreign excess Fisher-z,3.70379556206e-05,-0.00473474457927,0.00485057145596,36,10000,drug
+cold_confirmation,K562,cfra,Same-Foreign excess Fisher-z,0.0055920917526,0.000653544511425,0.0105724275785,36,10000,drug
+cold_confirmation,K562,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.00555505379698,0.00316852913967,0.00789100785689,36,10000,drug
+cold_confirmation,MCF7,raw,Same-Foreign excess Fisher-z,-0.000811026668463,-0.00636166348828,0.00428405981923,36,10000,drug
+cold_confirmation,MCF7,cfra,Same-Foreign excess Fisher-z,0.0017394869706,-0.00345768964996,0.00697594059437,36,10000,drug
+cold_confirmation,MCF7,cfra_minus_raw,CFRA-Student minus Raw-Student Same-Foreign excess Fisher-z,0.00255051363906,-0.00271908204399,0.00789750009553,36,10000,drug

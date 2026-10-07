@@ -1,0 +1,22 @@
+{
+  "status": "publication_code_package",
+  "public_repository": "https://github.com/Zhao-weijing/RePert-publication",
+  "archival_doi": null,
+  "licence": "MIT",
+  "manuscript_included": false,
+  "private_git_history_included": false,
+  "raw_terminal_logs_included": false,
+  "bulk_assay_inputs_included": false,
+  "upstream_training_reproduction": "not_verified",
+  "source": "existing_sanitized_collaboration_package_plus_existing_required_helpers",
+  "local_checks": {
+    "syntax": "PASS",
+    "known_private_marker_scan": "PASS",
+    "copied_csv_byte_integrity": "PASS",
+    "synthetic_example": "PASS",
+    "main_figures_2_to_5_from_frozen_results": "PASS",
+    "supplementary_figures_S1_to_S3_from_frozen_results": "PASS",
+    "predictor_table_regeneration": "PASS",
+    "source_data_workbooks": "PASS"
+  }
+}

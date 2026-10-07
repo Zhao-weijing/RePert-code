@@ -1,0 +1,5 @@
+task,metric,comparison,point,ci_low,ci_high,n_compounds,interpretation
+Hit recovery,AP,IMR - Raw,0.0405955535495,-0.0157817140839,0.0898596306118,262,Uncertain gain
+MoA retrieval,mAP,IMR - Raw,-0.00136692000973,-0.0046294733882,0.00180094178629,140,No clear gain
+Target retrieval,mAP,IMR - Raw,-0.00136471732002,-0.0042733353629,0.00146624433307,146,No clear gain
+Pathway retrieval,mAP,IMR - Raw,-0.000622214015201,-0.00703886286348,0.00637944452372,184,No clear gain

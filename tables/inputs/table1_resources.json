@@ -1,0 +1,373 @@
+{
+  "table_id": "Table 1",
+  "title": "Data resources and evaluation design",
+  "caption": "Evaluated compound counts correspond to the analyses shown in Figures 2-4, rather than the total size of each source resource.",
+  "columns": [
+    {
+      "key": "resource",
+      "label": "Resource"
+    },
+    {
+      "key": "readout",
+      "label": "Readout"
+    },
+    {
+      "key": "measurement_design",
+      "label": "Measurement design"
+    },
+    {
+      "key": "evaluated_compounds",
+      "label": "Evaluated compounds"
+    },
+    {
+      "key": "role_scope",
+      "label": "Role and scope"
+    }
+  ],
+  "rows": [
+    {
+      "row_id": "bbbc047_cp",
+      "resource": "BBBC047",
+      "readout": "Cell Painting; 775 features",
+      "measurement_design": "1-3 support plates; one held-out plate",
+      "evaluated_compounds": "4,023 / 3,982 / 3,588",
+      "role_scope": "Primary CP benchmark and GE-supported recovery",
+      "footnote_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "source_ids": [
+        "fig2_b",
+        "fig2_a",
+        "fig2_e",
+        "fig3",
+        "repeat_audit",
+        "bbbc047_paper"
+      ],
+      "analysis_counts": [
+        {
+          "analysis": "Fig. 2b CP recovery",
+          "support_measurements": 1,
+          "n_compounds": 4023
+        },
+        {
+          "analysis": "Fig. 2b CP recovery",
+          "support_measurements": 2,
+          "n_compounds": 3982
+        },
+        {
+          "analysis": "Fig. 2b CP recovery",
+          "support_measurements": 3,
+          "n_compounds": 3588
+        },
+        {
+          "analysis": "Fig. 2a descriptive repeatability",
+          "n_compounds": 18082,
+          "partition_role": "dataset-wide descriptive subset, not a held-out model test"
+        },
+        {
+          "analysis": "Fig. 2e independent CFRA evaluation",
+          "support_measurements": 1,
+          "n_compounds": 2423,
+          "partition_role": "held-out portion of the original training compounds"
+        },
+        {
+          "analysis": "Fig. 2e independent CFRA evaluation",
+          "support_measurements": 3,
+          "n_compounds": 2166,
+          "partition_role": "held-out portion of the original training compounds"
+        },
+        {
+          "analysis": "Fig. 3a GE evidence versus target-only CP or shuffled residual",
+          "n_compounds": 4023
+        },
+        {
+          "analysis": "Fig. 3a GE evidence versus matched foreign residual",
+          "n_compounds": 3538
+        },
+        {
+          "analysis": "Fig. 3d sequential evidence",
+          "n_compounds": 3983
+        }
+      ]
+    },
+    {
+      "row_id": "bbbc047_linked_ge",
+      "resource": "BBBC047-linked GE",
+      "readout": "Linked gene expression; 977 features",
+      "measurement_design": "1-2 support plates; one held-out plate",
+      "evaluated_compounds": "3,691 / 3,121",
+      "role_scope": "GE-target benchmark and CP-supported recovery",
+      "footnote_ids": [
+        "a",
+        "b",
+        "c"
+      ],
+      "source_ids": [
+        "fig2_c",
+        "fig3",
+        "repeat_audit",
+        "ge_teacher"
+      ],
+      "analysis_counts": [
+        {
+          "analysis": "Fig. 2c GE recovery",
+          "support_measurements": 1,
+          "n_compounds": 3691
+        },
+        {
+          "analysis": "Fig. 2c GE recovery",
+          "support_measurements": 2,
+          "n_compounds": 3121
+        },
+        {
+          "analysis": "Fig. 3b-c conditional CP evidence and joint prediction",
+          "support_measurements": 1,
+          "n_compounds": 3691
+        }
+      ],
+      "not_evaluated": {
+        "support_measurements": 3,
+        "eligible_test_compounds_before_strict_scoring": 4,
+        "reason": "Too few eligible compounds for the frozen GE-target benchmark"
+      },
+      "cellular_context_reporting": "The main table does not assign a uniform cell line to all linked GE records. Compound linkage is not same-cell co-measurement."
+    },
+    {
+      "row_id": "cpg0004_cp",
+      "resource": "cpg0004-LINCS",
+      "readout": "Cell Painting; 242 retained features",
+      "measurement_design": "Six doses; 1-3 support plates and a held-out plate",
+      "evaluated_compounds": "127 / 120 / 120; morphology: 110-262",
+      "role_scope": "Independent-acquisition CP benchmark and morphological validation",
+      "footnote_ids": [
+        "a",
+        "b",
+        "d",
+        "e"
+      ],
+      "source_ids": [
+        "fig2_b",
+        "fig2_e",
+        "fig4_a",
+        "fig4_b",
+        "fig4_c",
+        "fig4_d",
+        "cpg_audit",
+        "cpg_results"
+      ],
+      "analysis_counts": [
+        {
+          "analysis": "Fig. 2b CP recovery, strict matched-reference subset",
+          "support_measurements": 1,
+          "n_compounds": 127
+        },
+        {
+          "analysis": "Fig. 2b CP recovery, strict matched-reference subset",
+          "support_measurements": 2,
+          "n_compounds": 120
+        },
+        {
+          "analysis": "Fig. 2b CP recovery, strict matched-reference subset",
+          "support_measurements": 3,
+          "n_compounds": 120
+        },
+        {
+          "analysis": "Fig. 2e independent CFRA evaluation",
+          "support_measurements": 1,
+          "n_compounds": 189,
+          "partition_role": "held-out portion of the original training compounds"
+        },
+        {
+          "analysis": "Fig. 2e independent CFRA evaluation",
+          "support_measurements": 3,
+          "n_compounds": 185,
+          "partition_role": "held-out portion of the original training compounds"
+        },
+        {
+          "analysis": "Fig. 4a structural module agreement",
+          "n_compounds": 110,
+          "common_before_finite_filter": 262,
+          "excluded_unscorable": 152
+        },
+        {
+          "analysis": "Fig. 4b top-25 overlap and direction",
+          "n_compounds": 262
+        },
+        {
+          "analysis": "Fig. 4c IMR versus observed dose-response concordance",
+          "n_compounds": 260
+        },
+        {
+          "analysis": "Fig. 4c cross-modal update versus IMR dose-response concordance",
+          "n_compounds": 258
+        },
+        {
+          "analysis": "Fig. 4d activity recovery",
+          "n_compounds": 262
+        },
+        {
+          "analysis": "Fig. 4d mechanism-of-action retrieval",
+          "n_compounds": 140
+        },
+        {
+          "analysis": "Fig. 4d target retrieval",
+          "n_compounds": 146
+        },
+        {
+          "analysis": "Fig. 4d curated pathway-target retrieval",
+          "n_compounds": 184
+        }
+      ],
+      "cellular_context": "A549, verified in raw CP and linked GE metadata",
+      "paired_ge_role": "Linked GE is used as update evidence for CP; it is not an independent external GE-target validation in these figures.",
+      "morphology_reference_design": "Reference averages four physical plate rows excluding the current support; two frozen support rotations are retained. Rotations do not create additional experimental replicates."
+    },
+    {
+      "row_id": "sciplex3_student",
+      "resource": "sci-Plex3",
+      "readout": "Single-cell GE pseudobulk; A549, K562, MCF7",
+      "measurement_design": "Two biological repeats; held-out cell line/plate block",
+      "evaluated_compounds": "183 seen; 36 unseen per target",
+      "role_scope": "Downstream prediction with calibrated versus observed-response targets",
+      "footnote_ids": [
+        "a",
+        "f"
+      ],
+      "source_ids": [
+        "fig4_e",
+        "sciplex_fairness",
+        "sciplex_results"
+      ],
+      "analysis_counts": [
+        {
+          "analysis": "Fig. 4e previously seen compounds",
+          "target_cell_lines": [
+            "A549",
+            "K562",
+            "MCF7"
+          ],
+          "n_compounds_per_target": 183,
+          "n_drug_dose_units_per_target": 613
+        },
+        {
+          "analysis": "Unseen-compound confirmation",
+          "target_cell_lines": [
+            "A549",
+            "K562",
+            "MCF7"
+          ],
+          "n_compounds_per_target": 36,
+          "n_drug_dose_units_per_target": 115,
+          "subset_of_common_183_drug_universe": true
+        }
+      ],
+      "biological_repeat_ids": [
+        "rep1",
+        "rep2"
+      ],
+      "student_design": "One deterministic support-to-held direction per drug-dose unit. CFRA labels are generated source-only with drug-level out-of-fold prediction. Predictors use molecular structure, dose and the target/query Vehicle baseline in a source-only 2,000-gene space.",
+      "scope_boundary": "Cell-line and plate-block effects are confounded. The unseen-compound confirmation is inconclusive at MCF7; positive target-macro effect does not establish success for every target."
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "a",
+      "text": "Counts are unique evaluated compounds within each analysis, not cells, wells, drug-dose rows, training runs or source-resource totals. Eligibility varies across endpoints and support budgets; counts must not be added across rows or panels."
+    },
+    {
+      "id": "b",
+      "text": "Slash-separated counts follow increasing support budgets: 1/2/3 for CP and 1/2 for GE. A support budget k requires at least k + 1 distinct acquisition plates. Wells on the same plate are not counted as independent plates. Distinct plates do not establish biological or cross-site independence."
+    },
+    {
+      "id": "c",
+      "text": "BBBC047 CP was acquired in U2OS cells. The linked GE records are matched by compound and experimental metadata; they are not same-cell co-measurements. The descriptive CP analysis includes 18,082 compounds. Independent CFRA evaluation uses 2,423/2,166 BBBC047 and 189/185 cpg0004 compounds at 1/3 support measurements, drawn from a held-out fraction of the original training set."
+    },
+    {
+      "id": "d",
+      "text": "cpg0004-LINCS has A549 CP and linked GE measurements from an acquisition distinct from BBBC047. The displayed CP benchmark counts are the strict matched-reference subsets, not all 313 compounds in its original test partition. Linked GE contributes CP-update evidence; these figures do not establish external GE-target validation."
+    },
+    {
+      "id": "e",
+      "text": "cpg0004 morphology counts are 110 for module agreement, 262 for top-25 overlap/direction, and 260/258 for dose-response contrasts. Downstream activity, mechanism, target and pathway-target retrieval use 262/140/146/184 compounds. The morphology reference excludes the current support row and averages four physical plate rows; support rotations are not independent repeats."
+    },
+    {
+      "id": "f",
+      "text": "sci-Plex3 uses the two biological repeats rep1/rep2. Each held target has 183 previously seen drugs (613 drug-dose units); the 36 unseen drugs (115 units) form a subset of the common drug universe. Target Vehicle baselines are available at inference. Cell-line and plate-block transfer cannot be separated, and unseen-drug confirmation remains inconclusive at MCF7."
+    }
+  ],
+  "sources": [
+    {
+      "id": "fig2_a",
+      "path": "figures/data/figure_2/figure2_panelA.csv"
+    },
+    {
+      "id": "fig2_b",
+      "path": "figures/data/figure_2/figure2_panelB.csv"
+    },
+    {
+      "id": "fig2_c",
+      "path": "figures/data/figure_2/figure2_panelC.csv"
+    },
+    {
+      "id": "fig2_e",
+      "path": "figures/data/figure_2/figure2_panelE.csv"
+    },
+    {
+      "id": "fig3",
+      "path": "figures/data/figure_3/figure3_summary.csv"
+    },
+    {
+      "id": "fig4_a",
+      "path": "figures/data/figure_4/figure4_A_module_effects.csv"
+    },
+    {
+      "id": "fig4_b",
+      "path": "figures/data/figure_4/figure4_B_dominant_features.csv"
+    },
+    {
+      "id": "fig4_c",
+      "path": "figures/data/figure_4/figure4_C_trajectory_effects.csv"
+    },
+    {
+      "id": "fig4_d",
+      "path": "figures/data/figure_4/figure4_D_downstream_boundaries.csv"
+    },
+    {
+      "id": "fig4_e",
+      "path": "figures/data/figure_4/figure4_E_target_summary.csv"
+    },
+    {
+      "id": "repeat_audit",
+      "path": "analysis/cross_modal/repeat_audit/multimodal_repeat_audit.md"
+    },
+    {
+      "id": "ge_teacher",
+      "path": "analysis/cross_modal/expression_teacher/ge_teacher_experiment.py"
+    },
+    {
+      "id": "cpg_audit",
+      "path": "analysis/external_validation/lincs_cpg0004/data_audit/AUDIT.md"
+    },
+    {
+      "id": "cpg_results",
+      "path": "analysis/external_validation/lincs_cpg0004/RESULTS.md"
+    },
+    {
+      "id": "sciplex_fairness",
+      "path": "analysis/external_validation/sci_plex3/student_cross_cell/results/frozen_evaluation/FINAL_FAIRNESS_AUDIT.md"
+    },
+    {
+      "id": "sciplex_results",
+      "path": "analysis/external_validation/sci_plex3/student_cross_cell/results/frozen_evaluation/RESULTS.md"
+    },
+    {
+      "id": "bbbc047_paper",
+      "url": "https://academic.oup.com/gigascience/article/6/12/giw014/2865213",
+      "doi": "10.1093/gigascience/giw014",
+      "accessed": "2026-09-10",
+      "supports": "BBBC047 CP uses U2OS cells. Original resource covers 30,616 compounds in quadruplicate; this resource total is intentionally not used as the evaluated sample size."
+    }
+  ]
+}

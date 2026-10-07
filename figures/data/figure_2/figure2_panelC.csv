@@ -1,0 +1,3 @@
+scope,seed,budget,contrast,n_compounds,point,ci_low,ci_high,raw_pcc_point,raw_pcc_ci_low,raw_pcc_ci_high,panel,metric,interval_origin
+pooled_three_seed,all,1,GE_teacher_minus_GE_mean,3691,0.0697563365167794,0.0610217171196836,0.0786837611179521,0.0637068126083423,0.0555191085343261,0.0719637376755606,C,teacher-minus-support held-repeat Fisher z,original three-seed paired compound bootstrap
+pooled_three_seed,all,2,GE_teacher_minus_GE_mean,3121,0.0876169389064548,0.0770990900365032,0.0979160890300216,0.0782573642512782,0.0685246840446556,0.0876155167080297,C,teacher-minus-support held-repeat Fisher z,original three-seed paired compound bootstrap

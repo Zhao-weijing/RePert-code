@@ -1,0 +1,10 @@
+budget,arm,metric,point,ci_low,ci_high,n_compounds,n_conditions,bootstrap_rounds,panel,metric_definition,interval_origin
+1,RawMean,mAP_at_33,0.4732709056414753,0.457351519382509,0.489039613503554,3149,3154,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+1,CFRA,mAP_at_33,0.4845300236999337,0.4686747728436081,0.5003217284567066,3149,3154,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+1,cpDistiller-C,mAP_at_33,0.4363621324336115,0.4208689301110019,0.4519698851498216,3149,3154,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+2,RawMean,mAP_at_33,0.4974386561664491,0.4814100938180976,0.513403859707512,3124,3129,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+2,CFRA,mAP_at_33,0.5112752886753957,0.4955693641541449,0.5273360297754001,3124,3129,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+2,cpDistiller-C,mAP_at_33,0.4746173264368613,0.4586270050254898,0.4903731266095562,3124,3129,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+3,RawMean,mAP_at_33,0.5173779938951156,0.5004679414176014,0.534088452347993,2832,2837,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+3,CFRA,mAP_at_33,0.525247194577695,0.5081353935684076,0.5419421604372946,2832,2837,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"
+3,cpDistiller-C,mAP_at_33,0.5040257065721455,0.4870696711152338,0.5204915481460429,2832,2837,10000,F,same-compound held-repeat retrieval mAP with one positive and 32 foreign profiles,"frozen 10,000-draw paired compound bootstrap"

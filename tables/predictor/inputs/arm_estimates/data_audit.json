@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "source_files": [
+    {
+      "path": "analysis\\predictor_supervision\\bbbc047\\results\\frozen_evaluation\\TEST_PER_COMPOUND.csv",
+      "sha256": "30386d9fab5a754269be32779d65c9572e2bea3fcb8d69f0287136569febbbe2",
+      "bytes": 23124278
+    },
+    {
+      "path": "analysis\\predictor_supervision\\bbbc047\\results\\frozen_evaluation\\TEST_CONTRASTS.csv",
+      "sha256": "88394c9436f66b9bcb81f4ab4270d0c9c889dbace372f2d519051999f66e656a",
+      "bytes": 1346
+    },
+    {
+      "path": "analysis\\predictor_supervision\\bbbc047\\results\\frozen_evaluation\\TEST_METHOD_SUMMARY.csv",
+      "sha256": "6e8ebcd0c54c74574d7dfa1645a0a5b2a844339a47670ce9a26582cde1b8c24c",
+      "bytes": 2547
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\CONFIRMATION_PER_COMPOUND.csv",
+      "sha256": "06aa62330b1013f6739bf6aa33c72d4a2cf1ee2f0697e958b4affbc75955163a",
+      "bytes": 785725
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\SURFACE_MACRO_FULL_COMPARISON.csv",
+      "sha256": "27ad4e802fa727579b608abe29ffd9a38000f68de442f8392bbacf6e96c0c321",
+      "bytes": 18539
+    },
+    {
+      "path": "analysis\\predictor_supervision\\sci_plex3\\results\\confirmation\\FULL_COMPARISON_TABLE.csv",
+      "sha256": "319e47789921c07a5b5ec368366f246d02c70137564b611514963bfe9aab3a57",
+      "bytes": 22797
+    }
+  ],
+  "no_profile_checkpoint_or_model_reads": true,
+  "no_training_or_selection": true,
+  "bbbc_seed_count": 5,
+  "bbbc_seed_summary": "mean of five seed metrics within compound",
+  "sciplex_seed_summary": "original five-seed prediction ensemble; metrics averaged over doses within drug",
+  "bbbc_n": {
+    "2": 4040,
+    "3": 4000,
+    "4": 3606
+  },
+  "sciplex_n_per_line": {
+    "unseen": 36,
+    "seen": 183
+  },
+  "paired_frozen_means_and_ci_verified": true,
+  "waterfall_identity_verified": true,
+  "distribution_all_compounds_retained": true,
+  "histogram_or_schematic_densities": false,
+  "ci_level": 0.95,
+  "bootstrap_draws": 10000,
+  "intervals_pointwise_not_simultaneous": true,
+  "sciplex_macro_ci": "saved within-target-line paired-drug resampling; fixed equal-weight target lines",
+  "sciplex_evidence_status": "historical locked/retrieved; not new prospective confirmation",
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1"
+  }
+}

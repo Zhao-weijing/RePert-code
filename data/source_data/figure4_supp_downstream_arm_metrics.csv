@@ -1,0 +1,9 @@
+endpoint,method,metric,point,query_count,compound_count,seed_aggregation,status
+confirmed_activity_ap,Raw,AP,0.11260106815373656,3134,262,mean_seeds,estimable
+confirmed_activity_ap,CFRA,AP,0.17908612064729748,3134,262,mean_seeds,estimable
+moa_map,Raw,mAP,0.049974076229412766,1678,140,mean_seeds,estimable
+moa_map,CFRA,mAP,0.04976916198424645,1678,140,mean_seeds,estimable
+target_map,Raw,mAP,0.05017979916098326,1752,146,mean_seeds,estimable
+target_map,CFRA,mAP,0.04984460717972419,1752,146,mean_seeds,estimable
+reactome_target_neighbour_map,Raw,mAP,0.11952393176681986,2420,202,mean_seeds,estimable
+reactome_target_neighbour_map,CFRA,mAP,0.11700700089302747,2420,202,mean_seeds,estimable

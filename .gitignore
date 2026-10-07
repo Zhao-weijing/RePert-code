@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+figures/*.pdf
+figures/*.png
+figures/*.svg
+figures/notes/
+*.log
+.env
+.env.*

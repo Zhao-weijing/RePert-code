@@ -1,0 +1,144 @@
+table,method,source_cell,number_index,reported_number,cell_text,precision
+S4,Mean,column_2_tex,0,0.18947,"0.18947 [0.17697, 0.20255]",displayed_not_full_precision
+S4,Mean,column_2_tex,1,0.17697,"0.18947 [0.17697, 0.20255]",displayed_not_full_precision
+S4,Mean,column_2_tex,2,0.20255,"0.18947 [0.17697, 0.20255]",displayed_not_full_precision
+S4,Mean,column_3_tex,0,0.22936,"0.22936 [0.21548, 0.24308]",displayed_not_full_precision
+S4,Mean,column_3_tex,1,0.21548,"0.22936 [0.21548, 0.24308]",displayed_not_full_precision
+S4,Mean,column_3_tex,2,0.24308,"0.22936 [0.21548, 0.24308]",displayed_not_full_precision
+S4,Mean,column_4_tex,0,0.26921,"0.26921 [0.25447, 0.28443]",displayed_not_full_precision
+S4,Mean,column_4_tex,1,0.25447,"0.26921 [0.25447, 0.28443]",displayed_not_full_precision
+S4,Mean,column_4_tex,2,0.28443,"0.26921 [0.25447, 0.28443]",displayed_not_full_precision
+S4,Median,column_2_tex,0,0.18947,"0.18947 [0.17648, 0.20236]",displayed_not_full_precision
+S4,Median,column_2_tex,1,0.17648,"0.18947 [0.17648, 0.20236]",displayed_not_full_precision
+S4,Median,column_2_tex,2,0.20236,"0.18947 [0.17648, 0.20236]",displayed_not_full_precision
+S4,Median,column_3_tex,0,0.22936,"0.22936 [0.21562, 0.24320]",displayed_not_full_precision
+S4,Median,column_3_tex,1,0.21562,"0.22936 [0.21562, 0.24320]",displayed_not_full_precision
+S4,Median,column_3_tex,2,0.24320,"0.22936 [0.21562, 0.24320]",displayed_not_full_precision
+S4,Median,column_4_tex,0,0.25990,"0.25990 [0.24568, 0.27406]",displayed_not_full_precision
+S4,Median,column_4_tex,1,0.24568,"0.25990 [0.24568, 0.27406]",displayed_not_full_precision
+S4,Median,column_4_tex,2,0.27406,"0.25990 [0.24568, 0.27406]",displayed_not_full_precision
+S4,MODZ,column_2_tex,0,0.18947,"0.18947 [0.17656, 0.20250]",displayed_not_full_precision
+S4,MODZ,column_2_tex,1,0.17656,"0.18947 [0.17656, 0.20250]",displayed_not_full_precision
+S4,MODZ,column_2_tex,2,0.20250,"0.18947 [0.17656, 0.20250]",displayed_not_full_precision
+S4,MODZ,column_3_tex,0,0.22936,"0.22936 [0.21572, 0.24307]",displayed_not_full_precision
+S4,MODZ,column_3_tex,1,0.21572,"0.22936 [0.21572, 0.24307]",displayed_not_full_precision
+S4,MODZ,column_3_tex,2,0.24307,"0.22936 [0.21572, 0.24307]",displayed_not_full_precision
+S4,MODZ,column_4_tex,0,0.26419,"0.26419 [0.24903, 0.27969]",displayed_not_full_precision
+S4,MODZ,column_4_tex,1,0.24903,"0.26419 [0.24903, 0.27969]",displayed_not_full_precision
+S4,MODZ,column_4_tex,2,0.27969,"0.26419 [0.24903, 0.27969]",displayed_not_full_precision
+S4,PCA,column_2_tex,0,0.20049,"0.20049 [0.18618, 0.21476]",displayed_not_full_precision
+S4,PCA,column_2_tex,1,0.18618,"0.20049 [0.18618, 0.21476]",displayed_not_full_precision
+S4,PCA,column_2_tex,2,0.21476,"0.20049 [0.18618, 0.21476]",displayed_not_full_precision
+S4,PCA,column_3_tex,0,0.23796,"0.23796 [0.22370, 0.25282]",displayed_not_full_precision
+S4,PCA,column_3_tex,1,0.22370,"0.23796 [0.22370, 0.25282]",displayed_not_full_precision
+S4,PCA,column_3_tex,2,0.25282,"0.23796 [0.22370, 0.25282]",displayed_not_full_precision
+S4,PCA,column_4_tex,0,0.27776,"0.27776 [0.26214, 0.29336]",displayed_not_full_precision
+S4,PCA,column_4_tex,1,0.26214,"0.27776 [0.26214, 0.29336]",displayed_not_full_precision
+S4,PCA,column_4_tex,2,0.29336,"0.27776 [0.26214, 0.29336]",displayed_not_full_precision
+S4,Ridge,column_2_tex,0,0.20632,"0.20632 [0.19371, 0.21868]",displayed_not_full_precision
+S4,Ridge,column_2_tex,1,0.19371,"0.20632 [0.19371, 0.21868]",displayed_not_full_precision
+S4,Ridge,column_2_tex,2,0.21868,"0.20632 [0.19371, 0.21868]",displayed_not_full_precision
+S4,Ridge,column_3_tex,0,0.24029,"0.24029 [0.22701, 0.25326]",displayed_not_full_precision
+S4,Ridge,column_3_tex,1,0.22701,"0.24029 [0.22701, 0.25326]",displayed_not_full_precision
+S4,Ridge,column_3_tex,2,0.25326,"0.24029 [0.22701, 0.25326]",displayed_not_full_precision
+S4,Ridge,column_4_tex,0,0.27280,"0.27280 [0.25876, 0.28691]",displayed_not_full_precision
+S4,Ridge,column_4_tex,1,0.25876,"0.27280 [0.25876, 0.28691]",displayed_not_full_precision
+S4,Ridge,column_4_tex,2,0.28691,"0.27280 [0.25876, 0.28691]",displayed_not_full_precision
+S4,Noise2Self,column_2_tex,0,0.20364,"0.20364 [0.19032, 0.21709]",displayed_not_full_precision
+S4,Noise2Self,column_2_tex,1,0.19032,"0.20364 [0.19032, 0.21709]",displayed_not_full_precision
+S4,Noise2Self,column_2_tex,2,0.21709,"0.20364 [0.19032, 0.21709]",displayed_not_full_precision
+S4,Noise2Self,column_3_tex,0,0.23356,"0.23356 [0.21970, 0.24732]",displayed_not_full_precision
+S4,Noise2Self,column_3_tex,1,0.21970,"0.23356 [0.21970, 0.24732]",displayed_not_full_precision
+S4,Noise2Self,column_3_tex,2,0.24732,"0.23356 [0.21970, 0.24732]",displayed_not_full_precision
+S4,Noise2Self,column_4_tex,0,0.27328,"0.27328 [0.25865, 0.28804]",displayed_not_full_precision
+S4,Noise2Self,column_4_tex,1,0.25865,"0.27328 [0.25865, 0.28804]",displayed_not_full_precision
+S4,Noise2Self,column_4_tex,2,0.28804,"0.27328 [0.25865, 0.28804]",displayed_not_full_precision
+S4,IMR,column_2_tex,0,0.18968,"0.18968 [0.17764, 0.20163]",displayed_not_full_precision
+S4,IMR,column_2_tex,1,0.17764,"0.18968 [0.17764, 0.20163]",displayed_not_full_precision
+S4,IMR,column_2_tex,2,0.20163,"0.18968 [0.17764, 0.20163]",displayed_not_full_precision
+S4,IMR,column_3_tex,0,0.22170,"0.22170 [0.20911, 0.23471]",displayed_not_full_precision
+S4,IMR,column_3_tex,1,0.20911,"0.22170 [0.20911, 0.23471]",displayed_not_full_precision
+S4,IMR,column_3_tex,2,0.23471,"0.22170 [0.20911, 0.23471]",displayed_not_full_precision
+S4,IMR,column_4_tex,0,0.25000,"0.25000 [0.23678, 0.26360]",displayed_not_full_precision
+S4,IMR,column_4_tex,1,0.23678,"0.25000 [0.23678, 0.26360]",displayed_not_full_precision
+S4,IMR,column_4_tex,2,0.26360,"0.25000 [0.23678, 0.26360]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_2_tex,0,0.21019,"0.21019 [0.19781, 0.22262]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_2_tex,1,0.19781,"0.21019 [0.19781, 0.22262]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_2_tex,2,0.22262,"0.21019 [0.19781, 0.22262]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_3_tex,0,0.23541,"0.23541 [0.22231, 0.24847]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_3_tex,1,0.22231,"0.23541 [0.22231, 0.24847]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_3_tex,2,0.24847,"0.23541 [0.22231, 0.24847]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_4_tex,0,0.24741,"0.24741 [0.23395, 0.26107]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_4_tex,1,0.23395,"0.24741 [0.23395, 0.26107]",displayed_not_full_precision
+S4,Aggregated-target IMR,column_4_tex,2,0.26107,"0.24741 [0.23395, 0.26107]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_2_tex,0,0.21616,"0.21616 [0.20333, 0.22883]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_2_tex,1,0.20333,"0.21616 [0.20333, 0.22883]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_2_tex,2,0.22883,"0.21616 [0.20333, 0.22883]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_3_tex,0,0.25070,"0.25070 [0.23744, 0.26426]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_3_tex,1,0.23744,"0.25070 [0.23744, 0.26426]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_3_tex,2,0.26426,"0.25070 [0.23744, 0.26426]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_4_tex,0,0.28046,"0.28046 [0.26598, 0.29478]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_4_tex,1,0.26598,"0.28046 [0.26598, 0.29478]",displayed_not_full_precision
+S4,Empirical-Bayes shrinkage,column_4_tex,2,0.29478,"0.28046 [0.26598, 0.29478]",displayed_not_full_precision
+S4,ReCA,column_2_tex,0,0.22117,"0.22117 [0.20820, 0.23406]",displayed_not_full_precision
+S4,ReCA,column_2_tex,1,0.20820,"0.22117 [0.20820, 0.23406]",displayed_not_full_precision
+S4,ReCA,column_2_tex,2,0.23406,"0.22117 [0.20820, 0.23406]",displayed_not_full_precision
+S4,ReCA,column_3_tex,0,0.25416,"0.25416 [0.24069, 0.26803]",displayed_not_full_precision
+S4,ReCA,column_3_tex,1,0.24069,"0.25416 [0.24069, 0.26803]",displayed_not_full_precision
+S4,ReCA,column_3_tex,2,0.26803,"0.25416 [0.24069, 0.26803]",displayed_not_full_precision
+S4,ReCA,column_4_tex,0,0.28208,"0.28208 [0.26762, 0.29663]",displayed_not_full_precision
+S4,ReCA,column_4_tex,1,0.26762,"0.28208 [0.26762, 0.29663]",displayed_not_full_precision
+S4,ReCA,column_4_tex,2,0.29663,"0.28208 [0.26762, 0.29663]",displayed_not_full_precision
+S5,MLP,column_2_tex,0,3,"Capacity-matched control; 3 blocks, width 768",displayed_not_full_precision
+S5,MLP,column_2_tex,1,768,"Capacity-matched control; 3 blocks, width 768",displayed_not_full_precision
+S5,MLP,column_3_tex,0,2,"2,373,127",displayed_not_full_precision
+S5,MLP,column_3_tex,1,373,"2,373,127",displayed_not_full_precision
+S5,MLP,column_3_tex,2,127,"2,373,127",displayed_not_full_precision
+S5,MLP,column_4_tex,0,0.20667,0.20667,displayed_not_full_precision
+S5,MLP,column_5_tex,0,0.22973,0.22973,displayed_not_full_precision
+S5,MLP,column_6_tex,0,0.25429,0.25429,displayed_not_full_precision
+S5,ResNet,column_2_tex,0,3,"Compact; 3 blocks, width 384",displayed_not_full_precision
+S5,ResNet,column_2_tex,1,384,"Compact; 3 blocks, width 384",displayed_not_full_precision
+S5,ResNet,column_3_tex,0,2,"2,372,359",displayed_not_full_precision
+S5,ResNet,column_3_tex,1,372,"2,372,359",displayed_not_full_precision
+S5,ResNet,column_3_tex,2,359,"2,372,359",displayed_not_full_precision
+S5,ResNet,column_4_tex,0,0.19929,0.19929,displayed_not_full_precision
+S5,ResNet,column_5_tex,0,0.22895,0.22895,displayed_not_full_precision
+S5,ResNet,column_6_tex,0,0.25850,0.25850,displayed_not_full_precision
+S5,ResNet,column_2_tex,0,3,"Larger; 3 blocks, width 512",displayed_not_full_precision
+S5,ResNet,column_2_tex,1,512,"Larger; 3 blocks, width 512",displayed_not_full_precision
+S5,ResNet,column_3_tex,0,3,"3,949,319",displayed_not_full_precision
+S5,ResNet,column_3_tex,1,949,"3,949,319",displayed_not_full_precision
+S5,ResNet,column_3_tex,2,319,"3,949,319",displayed_not_full_precision
+S5,ResNet,column_4_tex,0,0.20121,0.20121,displayed_not_full_precision
+S5,ResNet,column_5_tex,0,0.23304,0.23304,displayed_not_full_precision
+S5,ResNet,column_6_tex,0,0.26481,0.26481,displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,0,2,"2,704,303",displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,1,704,"2,704,303",displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,2,303,"2,704,303",displayed_not_full_precision
+S5,FT-Transformer,column_4_tex,0,0.19427,0.19427,displayed_not_full_precision
+S5,FT-Transformer,column_5_tex,0,0.21876,0.21876,displayed_not_full_precision
+S5,FT-Transformer,column_6_tex,0,0.22649,0.22649,displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,0,4,"4,856,555",displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,1,856,"4,856,555",displayed_not_full_precision
+S5,FT-Transformer,column_3_tex,2,555,"4,856,555",displayed_not_full_precision
+S5,FT-Transformer,column_4_tex,0,0.19706,0.19706,displayed_not_full_precision
+S5,FT-Transformer,column_5_tex,0,0.21030,0.21030,displayed_not_full_precision
+S5,FT-Transformer,column_6_tex,0,0.23857,0.23857,displayed_not_full_precision
+S5,TabM,column_2_tex,0,4,Compact; $k=4$,displayed_not_full_precision
+S5,TabM,column_3_tex,0,2,"2,530,872",displayed_not_full_precision
+S5,TabM,column_3_tex,1,530,"2,530,872",displayed_not_full_precision
+S5,TabM,column_3_tex,2,872,"2,530,872",displayed_not_full_precision
+S5,TabM,column_4_tex,0,0.20169,0.20169,displayed_not_full_precision
+S5,TabM,column_5_tex,0,0.22813,0.22813,displayed_not_full_precision
+S5,TabM,column_6_tex,0,0.25812,0.25812,displayed_not_full_precision
+S5,TabM,column_2_tex,0,32,Larger; $k=32$,displayed_not_full_precision
+S5,TabM,column_3_tex,0,13,"13,799,360",displayed_not_full_precision
+S5,TabM,column_3_tex,1,799,"13,799,360",displayed_not_full_precision
+S5,TabM,column_3_tex,2,360,"13,799,360",displayed_not_full_precision
+S5,TabM,column_4_tex,0,0.20877,0.20877,displayed_not_full_precision
+S5,TabM,column_5_tex,0,0.23763,0.23763,displayed_not_full_precision
+S5,TabM,column_6_tex,0,0.26826,0.26826,displayed_not_full_precision
+S5,ReCA,column_4_tex,0,0.22117,0.22117,displayed_not_full_precision
+S5,ReCA,column_5_tex,0,0.25416,0.25416,displayed_not_full_precision
+S5,ReCA,column_6_tex,0,0.28208,0.28208,displayed_not_full_precision

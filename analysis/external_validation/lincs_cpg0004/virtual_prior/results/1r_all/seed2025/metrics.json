@@ -1,0 +1,246 @@
+{
+  "budget": 1,
+  "controls": {
+    "foreign_selection": "same test split, same CP condition repeat count when available, same target dose/baseline",
+    "shuffled_definition": "random permutation of correct prior predictions within mapped test pairs"
+  },
+  "data": "/path/to/data/AIDD/MVCPert_5_27/runs/cpg0004_lincs_cp_prepared_20260830/artifact/cp_plate_rows.npz",
+  "definition": "P0=(1-lambda) teacher + lambda virtual prior; lambda is selected on mapped validation pairs only and frozen for test. Prior has no post-treatment CP or GE input.",
+  "device": "cuda",
+  "dose": "all",
+  "feature_dim": 242,
+  "fingerprint_compound_count": 1402,
+  "guardrails": [
+    "compound-level locked split",
+    "teacher and prior fit only training compounds",
+    "held-out baseline is pre-treatment control only",
+    "GE treatment profiles are not read by this script",
+    "test used once after lambda selection",
+    "row-matched foreign null and exact-well availability are recorded"
+  ],
+  "lambda_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15000000000000002,
+    0.2,
+    0.25,
+    0.30000000000000004,
+    0.35000000000000003,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "locked_hyperparameters": {
+    "batch_size": 256,
+    "bootstrap_rounds": 2000,
+    "learning_rate": 0.0003,
+    "null_rounds": 32,
+    "prior_epochs": 60,
+    "prior_input": "ECFP4-2048 + held-plate pre-treatment CP control median + six-dose one-hot",
+    "teacher_epochs": 80,
+    "weight_decay": 1e-05
+  },
+  "mapped_pair_counts": {
+    "test": 8213,
+    "test_exact_well_null_usable": 0,
+    "test_row_matched_null_usable": 3466,
+    "train": 24323,
+    "valid": 8045
+  },
+  "paired_bootstrap": {
+    "matched_foreign_prior_minus_teacher_excess_z": {
+      "ci_high": -0.32308674604423404,
+      "ci_low": -0.4026862303434399,
+      "n": 121,
+      "point": -0.3626675045083508,
+      "rounds": 2000
+    },
+    "matched_foreign_prior_minus_teacher_pcc": {
+      "ci_high": -0.2649943659255769,
+      "ci_low": -0.33045771542510705,
+      "n": 121,
+      "point": -0.2979926397565813,
+      "rounds": 2000
+    },
+    "posterior_minus_matched_foreign_prior_excess_z": {
+      "ci_high": 0.40308910920556423,
+      "ci_low": 0.3181242038912396,
+      "n": 121,
+      "point": 0.36046413605091876,
+      "rounds": 2000
+    },
+    "posterior_minus_matched_foreign_prior_pcc": {
+      "ci_high": 0.32875368012822687,
+      "ci_low": 0.26440463973611855,
+      "n": 121,
+      "point": 0.2961825623399288,
+      "rounds": 2000
+    },
+    "posterior_minus_shuffled_prior_excess_z": {
+      "ci_high": 0.4262216413040293,
+      "ci_low": 0.36830736037219197,
+      "n": 121,
+      "point": 0.3965810574489963,
+      "rounds": 2000
+    },
+    "posterior_minus_shuffled_prior_pcc": {
+      "ci_high": 0.35276682837789747,
+      "ci_low": 0.3110010960661527,
+      "n": 121,
+      "point": 0.3319963493568413,
+      "rounds": 2000
+    },
+    "posterior_minus_teacher_excess_z": {
+      "ci_high": -0.0003651906920012455,
+      "ci_low": -0.004024118612473673,
+      "n": 121,
+      "point": -0.002203368457431977,
+      "rounds": 2000
+    },
+    "posterior_minus_teacher_pcc": {
+      "ci_high": -0.00030186522515695646,
+      "ci_low": -0.0034412522014156464,
+      "n": 121,
+      "point": -0.0018100774166525428,
+      "rounds": 2000
+    },
+    "shuffled_prior_minus_teacher_excess_z": {
+      "ci_high": -0.3696376023206803,
+      "ci_low": -0.43021218971792224,
+      "n": 121,
+      "point": -0.3987844259064283,
+      "rounds": 2000
+    },
+    "shuffled_prior_minus_teacher_pcc": {
+      "ci_high": -0.31324225045018655,
+      "ci_low": -0.3546115545441765,
+      "n": 121,
+      "point": -0.3338064267734938,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_matched_foreign_prior_excess_z": {
+      "ci_high": 0.07037000297050346,
+      "ci_low": -0.007463690573746271,
+      "n": 121,
+      "point": 0.02920182429324494,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_matched_foreign_prior_pcc": {
+      "ci_high": 0.059138238568400676,
+      "ci_low": -0.011824616950334231,
+      "n": 121,
+      "point": 0.02246299067909941,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_shuffled_prior_excess_z": {
+      "ci_high": 0.08993767153861507,
+      "ci_low": 0.04099028181811813,
+      "n": 121,
+      "point": 0.06531874569132244,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_shuffled_prior_pcc": {
+      "ci_high": 0.0806951364601018,
+      "ci_low": 0.035608029139069006,
+      "n": 121,
+      "point": 0.058276777696012014,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_teacher_excess_z": {
+      "ci_high": -0.3043839512735155,
+      "ci_low": -0.3646357211131755,
+      "n": 121,
+      "point": -0.3334656802151058,
+      "rounds": 2000
+    },
+    "virtual_prior_minus_teacher_pcc": {
+      "ci_high": -0.24994086564739257,
+      "ci_low": -0.30101054706814717,
+      "n": 121,
+      "point": -0.27552964907748184,
+      "rounds": 2000
+    }
+  },
+  "prior": {
+    "best_epoch": 0,
+    "best_validation_mse": 1.0459856986999512
+  },
+  "seed": 2025,
+  "selected_lambda": 0.1,
+  "smiles": "/path/to/data/AIDD/MVCPert_5_27/runs/cpg0004_lincs_virtual_prior_20260830/compound_smiles.csv",
+  "summaries": {
+    "matched_foreign_prior": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": -0.23219297952741727,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.10422341210138375,
+      "raw_pcc_mean": 0.09908596334606468,
+      "rsf_vs_support_mean": 1338.149779884247
+    },
+    "posterior": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": 0.12827115652350157,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.46468754815230257,
+      "raw_pcc_mean": 0.39526852568599347,
+      "rsf_vs_support_mean": -739.2386290781609
+    },
+    "shuffled_prior": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": -0.2683099009254947,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.06810649070330624,
+      "raw_pcc_mean": 0.06327217632915208,
+      "rsf_vs_support_mean": 1546.294963762329
+    },
+    "support_mean": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": -0.0001735179297697919,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.33624287369903116,
+      "raw_pcc_mean": 0.2905039317195287,
+      "rsf_vs_support_mean": 1.0
+    },
+    "teacher": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": 0.13047452498093354,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.46689091660973464,
+      "raw_pcc_mean": 0.39707860310264603,
+      "rsf_vs_support_mean": -751.9368468378772
+    },
+    "virtual_prior": {
+      "compound_count": 121,
+      "excess_fisher_z_mean": -0.20299115523417233,
+      "null_fisher_z_mean": 0.3396940585582931,
+      "pair_count": 3466,
+      "raw_fisher_z_mean": 0.1334252363946287,
+      "raw_pcc_mean": 0.1215489540251641,
+      "rsf_vs_support_mean": 1169.8569450631578
+    }
+  },
+  "teacher": {
+    "best_epoch": 35,
+    "best_validation_mse": 0.6267104744911194
+  },
+  "validation_lambda_mse": {
+    "0.00": 3.7162643730759624,
+    "0.05": 3.699739704007035,
+    "0.10": 3.697190335049595,
+    "0.15": 3.708616236980478,
+    "0.20": 3.7340174439345284,
+    "0.25": 3.7733939513526638,
+    "0.30": 3.8267457528146203,
+    "0.35": 3.8940728539059704,
+    "0.40": 3.9753751498870895,
+    "0.45": 4.070652828334924,
+    "0.50": 4.17990580683069
+  },
+  "version": "cpg0004-LINCS-virtual-prior-2026-08-30"
+}

@@ -1,0 +1,19 @@
+panel,dataset,budget,seed,point,ci_low,ci_high,n_compounds,metric,interval_origin
+B,BBBC047,1,3407,0.0805006137136697,0.07166290208314001,0.0891137595486203,4023,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,1,42,0.07915996684803843,0.07020883255479027,0.0879729915564833,4023,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,1,2025,0.08171393251620657,0.07295035735021957,0.09041423236873573,4023,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,1,3407,0.13188704326311834,0.11343835440187686,0.15046280111237606,127,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,1,42,0.13234337758873138,0.11540363673236298,0.1502968452967445,127,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,1,2025,0.13413998711223865,0.11384088079205007,0.15416051511520246,127,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,2,3407,0.047840139550163134,0.0399439335157806,0.05545047558305179,3982,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,2,42,0.04730956040195716,0.039535030362127396,0.05530154114000177,3982,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,2,2025,0.04755336859866688,0.03951944279376179,0.055197327748140824,3982,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,2,3407,0.06637098344359806,0.05416116913090902,0.07925873319304524,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,2,42,0.07094889692632896,0.05862193568515753,0.08357344330552577,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,2,2025,0.0714476763951656,0.05787013706288458,0.0844985244308419,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,3,3407,0.029552933677748805,0.02145019891833071,0.037621428552409214,3588,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,3,42,0.03031609776012399,0.02234582589106376,0.0385961920548031,3588,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,BBBC047,3,2025,0.02661559996620117,0.018473716034238644,0.034649854238090846,3588,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,3,3407,0.030125338297192703,0.019405955547574103,0.040547036063626855,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,3,42,0.03222866015591889,0.02128705752224043,0.04272304782225858,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap
+B,cpg0004,3,2025,0.032486565143545434,0.02092949594043383,0.04416155146985891,120,teacher-minus-support held-repeat Fisher z,original frozen bootstrap

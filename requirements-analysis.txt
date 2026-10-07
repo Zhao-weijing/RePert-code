@@ -1,0 +1,9 @@
+# Additional upstream dependencies inferred from copied code; not an environment lock.
+scipy
+scikit-learn
+torch
+h5py
+rdkit
+anndata
+scanpy
+pyarrow

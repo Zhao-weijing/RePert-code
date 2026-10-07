@@ -1,0 +1,44 @@
+% Generated from frozen metrics. Do not edit individual numeric cells.
+% Dependencies: booktabs, array, xcolor, colortbl, caption, helvet.
+% colortbl and caption must be available in the host document preamble.
+% All definitions are local to this input; no resizebox or raster table.
+\begingroup
+\sffamily
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.0}
+\setlength{\aboverulesep}{0pt}
+\setlength{\belowrulesep}{0pt}
+\arrayrulecolor[gray]{0.4}
+\captionsetup{font={small,sf},labelfont=bf,textfont=bf,justification=raggedright,singlelinecheck=false,labelsep=space,skip=7pt}
+\newcommand{\ReCATableCell}[3]{\parbox[t]{\linewidth}{\raggedright #1\\[-0.5pt]{\fontsize{7.2}{8.3}\selectfont\color[gray]{0.25}[#2, #3]}}}
+\newcommand{\ReCATableHead}[1]{\rule{0pt}{12pt}\textbf{#1}}
+\newcommand{\ReCATableStart}{\begin{tabular}{p{13mm}p{11mm}p{19mm}*{4}{p{\dimexpr(\linewidth-43mm-14\tabcolsep)/4\relax}}}}
+
+\begin{table}[p]
+\centering
+\caption[Raw-profile prediction with reproducibility-aware supervision]{\textbar\enspace Raw-profile prediction with reproducibility-aware supervision}
+\label{tab:predictor-supervision}
+\fontsize{8.5}{10}\selectfont
+\ReCATableStart
+\toprule[0.7pt]
+\rowcolor[gray]{0.86}\multicolumn{7}{l}{\rule{0pt}{13pt}\textbf{BBBC047: selected-repeat reconstruction}}\\[4pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.92}\ReCATableHead{Budget} & \ReCATableHead{\textit{n}} & \ReCATableHead{Method} & \ReCATableHead{PCC $\uparrow$} & \ReCATableHead{$\Delta$PCC $\uparrow$} & \ReCATableHead{RMSE $\downarrow$} & \ReCATableHead{$E$ $\uparrow$} \\[4pt]
+\midrule[0.5pt]
+\rule{0pt}{12pt}2R & 4,040 & Raw & \ReCATableCell{0.2934}{0.2840}{0.3026} & \ReCATableCell{0.3313}{0.3227}{0.3402} & \ReCATableCell{0.7706}{0.7593}{0.7822} & \ReCATableCell{0.2188}{0.2041}{0.2333} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA+Res & \ReCATableCell{\textbf{0.3017}}{0.2926}{0.3111} & \ReCATableCell{\textbf{0.3394}}{0.3307}{0.3480} & \ReCATableCell{\textbf{0.7665}}{0.7552}{0.7779} & \ReCATableCell{\textbf{0.2384}}{0.2239}{0.2531} \\[12pt]
+\midrule[0.3pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt}3R & 4,000 & Raw & \ReCATableCell{0.3425}{0.3331}{0.3517} & \ReCATableCell{0.3834}{0.3742}{0.3923} & \ReCATableCell{0.6818}{0.6719}{0.6922} & \ReCATableCell{0.2765}{0.2612}{0.2916} \\[4pt]
+\rowcolor[gray]{0.96}
+\rule{0pt}{12pt} &  & ReCA+Res & \ReCATableCell{\textbf{0.3500}}{0.3406}{0.3591} & \ReCATableCell{\textbf{0.3922}}{0.3834}{0.4010} & \ReCATableCell{\textbf{0.6755}}{0.6656}{0.6857} & \ReCATableCell{\textbf{0.2904}}{0.2749}{0.3058} \\[12pt]
+\midrule[0.3pt]
+\rule{0pt}{12pt}4R & 3,606 & Raw & \ReCATableCell{0.3723}{0.3623}{0.3823} & \ReCATableCell{0.4162}{0.4066}{0.4257} & \ReCATableCell{0.6383}{0.6280}{0.6487} & \ReCATableCell{0.3168}{0.2997}{0.3339} \\[4pt]
+\rule{0pt}{12pt} &  & ReCA+Res & \ReCATableCell{\textbf{0.3792}}{0.3691}{0.3892} & \ReCATableCell{\textbf{0.4264}}{0.4170}{0.4360} & \ReCATableCell{\textbf{0.6314}}{0.6213}{0.6418} & \ReCATableCell{\textbf{0.3272}}{0.3099}{0.3446} \\[12pt]
+\bottomrule[0.7pt]
+\end{tabular}
+\par\vspace{5pt}\begin{minipage}{\linewidth}\fontsize{7.5}{9.2}\selectfont\raggedright
+Values are means with pointwise 95\% bootstrap confidence intervals below. $n$ denotes compounds evaluated by PCC, $\Delta$PCC and RMSE; $E$ requires matched references from other compounds and was evaluated on 3,915, 3,874 and 3,478 compounds at 2R, 3R and 4R, respectively. PCC, Pearson correlation coefficient computed on full profiles; $\Delta$PCC, Pearson correlation coefficient computed on control-subtracted responses; RMSE, root mean squared error; $E$, perturbation specificity (Fisher $z$). Res, residual prediction. $\uparrow$/$\downarrow$ indicate higher/lower is better. Bold marks the better mean within each setting. Target construction, seed aggregation and resampling are described in Methods.
+\end{minipage}
+\end{table}
+\endgroup

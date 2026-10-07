@@ -1,0 +1,13 @@
+group_tex,column_1_tex,column_2_tex,column_3_tex,column_4_tex
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: seen compounds}},Calibrated $-$ observed training targets,A549,"$+0.00492\ [0.00352,\ 0.00631]$",183
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: seen compounds}},,K562,"$+0.00907\ [0.00702,\ 0.01137]$",183
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: seen compounds}},,MCF7,"$+0.00334\ [0.00067,\ 0.00597]$",183
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: seen compounds}},,Mean,"$+0.00578\ [0.00304,\ 0.00887]$",3 lines
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: unseen compounds (Supplementary Fig.~S2a)}},Calibrated $-$ observed training targets,A549,"$+0.00626\ [0.00313,\ 0.00938]$",36
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: unseen compounds (Supplementary Fig.~S2a)}},,K562,"$+0.00556\ [0.00317,\ 0.00789]$",36
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: unseen compounds (Supplementary Fig.~S2a)}},,MCF7,"$+0.00255\ [-0.00272,\ 0.00790]$",36
+\multicolumn{4}{l}{\textbf{Predictor-target replacement: unseen compounds (Supplementary Fig.~S2a)}},,Mean,"$+0.00479\ [0.00167,\ 0.00726]$",3 lines
+\multicolumn{4}{l}{\textbf{Direct estimator transfer: unseen compounds (Supplementary Fig.~S2b)}},Transferred ReCA $-$ observed support,A549,"$-0.00760\ [-0.01447,\ -0.00110]$",36
+\multicolumn{4}{l}{\textbf{Direct estimator transfer: unseen compounds (Supplementary Fig.~S2b)}},,K562,"$-0.00723\ [-0.01223,\ -0.00260]$",36
+\multicolumn{4}{l}{\textbf{Direct estimator transfer: unseen compounds (Supplementary Fig.~S2b)}},,MCF7,"$-0.01776\ [-0.03015,\ -0.00763]$",36
+\multicolumn{4}{l}{\textbf{Direct estimator transfer: unseen compounds (Supplementary Fig.~S2b)}},,Mean,"$-0.01087\ [-0.01896,\ -0.00499]$",3 lines

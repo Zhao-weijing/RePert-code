@@ -1,0 +1,2 @@
+point,ci_low,ci_high,bootstrap_rounds,statistic,interval_origin
+0.0071818000873933585,0.005294714180595994,0.009130639128030799,10000,equal-condition macro; conditions may share compounds,original frozen macro bootstrap

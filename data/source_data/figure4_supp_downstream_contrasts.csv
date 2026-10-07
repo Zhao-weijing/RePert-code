@@ -1,0 +1,5 @@
+endpoint,metric,comparison,point,ci_low,ci_high,rounds,compound_count,query_count,bootstrap_unit,seed_aggregation
+confirmed_activity_ap,AP,CFRA - Raw,0.06648505249356094,0.021197495759859537,0.12941761531899867,10000,262,3134,compound,mean_seeds
+moa_map,mAP,CFRA - Raw,-0.00020349369773342045,-0.001150475883055808,0.0007056010214784164,10000,140,420,compound,mean_seeds
+target_map,mAP,CFRA - Raw,-0.0003351919812590659,-0.0011438659714884084,0.0005086878342376084,10000,146,438,compound,mean_seeds
+reactome_target_neighbour_map,mAP,CFRA - Raw,-0.002511639080911189,-0.005784077697103293,0.0007338908664049616,10000,202,606,compound,mean_seeds

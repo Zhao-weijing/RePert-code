@@ -1,0 +1,56 @@
+[
+  {
+    "display_item": "Table_1",
+    "path": "data/reported_tables/Table_1_part_1.csv",
+    "rows": 5,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S1",
+    "path": "data/reported_tables/Table_S1_part_1.csv",
+    "rows": 32,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S2",
+    "path": "data/reported_tables/Table_S2_part_1.csv",
+    "rows": 19,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S3",
+    "path": "data/reported_tables/Table_S3_part_1.csv",
+    "rows": 15,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S3",
+    "path": "data/reported_tables/Table_S3_part_2.csv",
+    "rows": 12,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S4",
+    "path": "data/reported_tables/Table_S4_part_1.csv",
+    "rows": 10,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S5",
+    "path": "data/reported_tables/Table_S5_part_1.csv",
+    "rows": 8,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S5",
+    "path": "data/reported_tables/Table_S5_part_2.csv",
+    "rows": 6,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  },
+  {
+    "display_item": "Table_S6",
+    "path": "data/reported_tables/Table_S6_part_1.csv",
+    "rows": 9,
+    "source_type": "displayed_LaTeX_values_not_raw_observations"
+  }
+]

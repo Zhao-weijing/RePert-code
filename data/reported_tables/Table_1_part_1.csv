@@ -1,0 +1,6 @@
+group_tex,column_1_tex,column_2_tex,column_3_tex,column_4_tex,column_5_tex
+,{p{32mm}p{34mm}p{13mm}p{46mm}>{\raggedleft\arraybackslash}p{\dimexpr\linewidth-125mm-10\tabcolsep\relax}} \rowcolor[gray]{0.86} \textbf{Dataset},\textbf{Cell line(s)},\textbf{Assay},\textbf{Representation},\textbf{Dimensions}
+,\rule{0pt}{14pt}BBBC047 (Rosetta),U2OS,CP,CellProfiler features,775
+,,,GE,L1000 profiles,977
+,\rowcolor[gray]{0.96} \rule{0pt}{14pt}cpg0004-LINCS,A549,CP,CellProfiler features\textsuperscript{a},242
+,\rule{0pt}{14pt}sci-Plex3,"A549, K562, MCF7",GE,RNA-seq pseudobulk,"2,000"
