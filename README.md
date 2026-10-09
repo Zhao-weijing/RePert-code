@@ -3,9 +3,10 @@
 <h1>RePert</h1>
 <p><strong>Reproducible perturbation responses from independent measurements</strong></p>
 <p>
+  <a href="README_zh-CN.md">简体中文</a> ·
   <a href="https://zhao-weijing.github.io/RePert-code/">🌐 Project website</a> ·
   <a href="#quick-start">🚀 Quick start</a> ·
-  <a href="README_zh-CN.md">简体中文</a>
+  <img src="https://img.shields.io/badge/Assay-Cell%20Painting-0C8F91?logo=microscope&logoColor=white" alt="Cell Painting"> <img src="https://img.shields.io/badge/Modality-Gene%20Expression-7753B6?logo=dna&logoColor=white" alt="Gene expression"> <img src="https://img.shields.io/badge/Principle-Independent%20Repeats-2A697A?logo=checkmarx&logoColor=white" alt="Independent biological measurements">
 </p>
 </div>
 
