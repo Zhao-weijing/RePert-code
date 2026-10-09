@@ -3,12 +3,11 @@
 <h1>RePert</h1>
 <p><strong>基于独立测量构建可重复的细胞扰动响应</strong></p>
 <p>
-  <a href="README.md"><img src="https://img.shields.io/badge/-English-0B7285?style=flat-square" alt="English"></a>
-  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/-%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-0B7285?style=flat-square" alt="项目主页"></a>
-  <a href="#quick-start"><img src="https://img.shields.io/badge/-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-0B7285?style=flat-square" alt="快速开始"></a>
-  <img src="https://img.shields.io/badge/-Cell%20Painting-0B7285?style=flat-square" alt="Cell Painting">
-  <img src="https://img.shields.io/badge/-Gene%20expression-0B7285?style=flat-square" alt="Gene expression">
-  <img src="https://img.shields.io/badge/-Independent%20biological%20measurements-0B7285?style=flat-square" alt="Independent biological measurements">
+  <a href="README.md"><img src="https://img.shields.io/badge/-English-0B7285?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik00IDZoMTJNMTAgM3YzTTYgMTBjMSAzIDMgNSA3IDdNMTQgOWMtMiA0LTUgNy05IDlNMTUgMjBsMy04IDMgOE0xNiAxN2g0Ii8%2BPC9zdmc%2B" alt="English"></a>
+  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/-%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-0B7285?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjkiLz48cGF0aCBkPSJNMyAxMmgxOE0xMiAzYzQgNSA0IDEzIDAgMThNMTIgM2MtNCA1LTQgMTMgMCAxOCIvPjwvc3ZnPg%3D%3D" alt="项目主页"></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-0B7285?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Im0xMyAyLTkgMTJoN2wtMSA4IDEwLTEyaC03bDAtOFoiLz48L3N2Zz4%3D" alt="快速开始"></a>
+  <img src="https://img.shields.io/badge/-Cell%20Painting-0B7285?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxyZWN0IHg9IjMiIHk9IjQiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNiIgcng9IjMiLz48Y2lyY2xlIGN4PSI5IiBjeT0iMTAiIHI9IjIiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjkiIHI9IjIiLz48Y2lyY2xlIGN4PSIxMyIgY3k9IjE1IiByPSIyIi8%2BPC9zdmc%2B" alt="Cell Painting">
+  <img src="https://img.shields.io/badge/-Gene%20expression-0B7285?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik01IDJjMCAxMCAxNCAxMCAxNCAyME0xOSAyYzAgMTAtMTQgMTAtMTQgMjBNNyA2aDEwTTYgMTBoMTJNNiAxNGgxMk03IDE4aDEwIi8%2BPC9zdmc%2B" alt="Gene expression">
 </p>
 </div>
 
