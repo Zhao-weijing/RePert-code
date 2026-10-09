@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">RePert conceptual roadmap</title>
+<desc id="desc">Independent compound-dose acquisition plate repeats feed repeat-aware estimation; conditional Cell Painting and gene expression evidence improves estimates, which can train a downstream predictor.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071F2B"/><stop offset="1" stop-color="#123B49"/></linearGradient>
+  <linearGradient id="t" x1="0" x2="1"><stop stop-color="#20C9C7"/><stop offset="1" stop-color="#7ED7DA"/></linearGradient>
+  <linearGradient id="p" x1="0" x2="1"><stop stop-color="#9D87F6"/><stop offset="1" stop-color="#C6B6FF"/></linearGradient>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#3D6470" stroke-opacity=".18" stroke-width=".8"/></pattern>
+  <filter id="shade" x="-20%" y="-30%" width="140%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity=".15"/></filter>
+</defs>
+<rect width="1200" height="480" rx="22" fill="url(#bg)"/>
+<rect width="1200" height="480" rx="22" fill="url(#grid)"/>
+<text x="54" y="59" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#84ABBC">REPERT   /   EVIDENCE-FIRST PERTURBATION MODELING</text>
+<text x="54" y="110" font-family="Georgia,serif" font-size="39" fill="#F1F8FA">Separate repeatable biology from measurement noise.</text>
+<g font-family="Arial,Helvetica,sans-serif">
+  <rect x="54" y="160" width="327" height="240" rx="15" fill="#FFFFFF" fill-opacity=".085" stroke="#73929D" stroke-opacity=".5"/>
+  <text x="78" y="195" font-size="12" font-weight="700" letter-spacing="2" fill="#8CE2DC">01 / MEASURE</text>
+  <text x="78" y="228" font-size="21" font-weight="700" fill="#FFFFFF">Independent repeats</text>
+  <text x="78" y="252" font-size="13" fill="#B7CED5">One compound + one dose</text>
+  <g transform="translate(78 277)">
+    <rect x="0" y="0" width="80" height="67" rx="8" fill="#184F5B" stroke="#3B909A"/>
+    <rect x="91" y="0" width="80" height="67" rx="8" fill="#184F5B" stroke="#3B909A"/>
+    <rect x="182" y="0" width="80" height="67" rx="8" fill="#184F5B" stroke="#3B909A"/>
+    <g fill="#54D7CB"><circle cx="24" cy="20" r="7"/><circle cx="50" cy="36" r="10"/><circle cx="37" cy="50" r="5"/>
+    <circle cx="115" cy="23" r="7"/><circle cx="145" cy="32" r="10"/><circle cx="123" cy="51" r="5"/>
+    <circle cx="206" cy="27" r="7"/><circle cx="230" cy="33" r="10"/><circle cx="220" cy="50" r="5"/></g>
+    <g font-size="10" fill="#B6DDE2" text-anchor="middle"><text x="40" y="83">Plate 1</text><text x="131" y="83">Plate 2</text><text x="222" y="83">Held out</text></g>
+  </g>
+  <g transform="translate(397 274)" stroke="#60C8CE" stroke-width="3" fill="none" stroke-linecap="round"><path d="M0 0H44"/><path d="M36 -8L44 0L36 8"/></g>
+  <rect x="459" y="160" width="321" height="240" rx="15" fill="#FFFFFF" fill-opacity=".085" stroke="#73929D" stroke-opacity=".5"/>
+  <text x="482" y="195" font-size="12" font-weight="700" letter-spacing="2" fill="#8CE2DC">02 / ESTIMATE</text>
+  <text x="482" y="228" font-size="21" font-weight="700" fill="#FFFFFF">Repeat-aware ReCA</text>
+  <text x="482" y="252" font-size="13" fill="#B7CED5">IMR · LSO · empirical Bayes</text>
+  <g transform="translate(483 282)">
+    <rect x="0" y="0" width="82" height="59" rx="9" fill="#124950" stroke="#33D2CB"/>
+    <rect x="94" y="0" width="82" height="59" rx="9" fill="#124950" stroke="#33D2CB"/>
+    <rect x="188" y="0" width="82" height="59" rx="9" fill="#124950" stroke="#33D2CB"/>
+    <g fill="#C9F5F1" font-size="17" font-weight="700" text-anchor="middle"><text x="41" y="36">IMR</text><text x="135" y="36">LSO</text><text x="229" y="36">EB</text></g>
+    <path d="M41 63V83M135 63V83M229 63V83M41 83H229" stroke="#5BD9D3" fill="none" stroke-width="2.1"/>
+    <path d="M135 83V102" stroke="#5BD9D3" stroke-width="2.1"/>
+    <text x="135" y="117" font-size="12" text-anchor="middle" fill="#8CE2DC">Calibrated fusion</text>
+  </g>
+  <g transform="translate(797 274)" stroke="#A993F8" stroke-width="3" fill="none" stroke-linecap="round"><path d="M0 0H44"/><path d="M36 -8L44 0L36 8"/></g>
+  <rect x="858" y="160" width="288" height="240" rx="15" fill="#FFFFFF" fill-opacity=".085" stroke="#73929D" stroke-opacity=".5"/>
+  <text x="879" y="195" font-size="12" font-weight="700" letter-spacing="2" fill="#C6B6FF">03 / UPDATE &amp; PREDICT</text>
+  <text x="879" y="228" font-size="21" font-weight="700" fill="#FFFFFF">Conditional evidence</text>
+  <text x="879" y="252" font-size="13" fill="#B7CED5">Additional CP / GE signals</text>
+  <rect x="879" y="281" width="119" height="46" rx="8" fill="#543B8B" stroke="#AA92FC"/>
+  <rect x="1008" y="281" width="115" height="46" rx="8" fill="#543B8B" stroke="#AA92FC"/>
+  <g fill="#ECE8FF" font-size="13" text-anchor="middle" font-weight="700"><text x="938" y="309">Cell Painting</text><text x="1065" y="309">Expression</text></g>
+  <path d="M998 304H1008" stroke="#C6B6FF" stroke-width="2"/>
+  <text x="879" y="360" font-size="13" fill="#D2D0F4">Better targets ≠ automatic</text>
+  <text x="879" y="379" font-size="13" fill="#D2D0F4">downstream biology gains.</text>
+</g>
+<text x="54" y="445" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#A3C1C9">Illustrative roadmap · open the original authors' Figure 1 PDF for the full scientific schematic</text>
+</svg>
