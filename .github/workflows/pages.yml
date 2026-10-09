@@ -1,0 +1,49 @@
+name: Deploy RePert project website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - assets/**
+      - figures/data/figure_1/figure1_authors.pdf
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: repert-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Stage public files only
+        run: |
+          test -s assets/repert_figure1.png
+          test -s figures/data/figure_1/figure1_authors.pdf
+          mkdir -p _site/assets/site _site/figures/data/figure_1
+          cp index.html _site/
+          cp assets/repert_figure1.png assets/repert_overview.svg _site/assets/
+          cp assets/site/repert.css assets/site/repert.js assets/site/favicon.svg _site/assets/site/
+          cp figures/data/figure_1/figure1_authors.pdf _site/figures/data/figure_1/
+          echo "RePert public site is staged without bulk analysis files."
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

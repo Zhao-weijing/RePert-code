@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RePert recovers reproducible cellular perturbation responses from independent repeats, evaluates conditional CP/GE evidence, and tests downstream supervision.">
+  <meta name="theme-color" content="#072936">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RePert — Reproducible Perturbation Responses">
+  <meta property="og:description" content="Measure what repeats. Update with what complements.">
+  <meta property="og:image" content="https://zhao-weijing.github.io/RePert-code/assets/repert_figure1.png">
+  <meta property="og:image:alt" content="Authors' original RePert Figure 1 framework">
+  <link rel="canonical" href="https://zhao-weijing.github.io/RePert-code/">
+  <link rel="icon" type="image/svg+xml" href="assets/site/favicon.svg">
+  <link rel="stylesheet" href="assets/site/repert.css">
+  <script src="assets/site/repert.js" defer></script>
+  <title>RePert · Reproducible Perturbation Responses</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav-shell">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="RePert home">
+        <span class="brand-emblem" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-type">RePert</span>
+        <span class="brand-descriptor">repeat-aware perturbation responses</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><span aria-hidden="true">☰</span> Menu</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#story">Overview</a>
+        <a href="#method">Framework</a>
+        <a href="#evidence">Results</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#software">Code</a>
+        <a class="nav-github" href="https://github.com/Zhao-weijing/RePert-code" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> RePert / evidence-first cellular modeling</div>
+          <h1>Measure what <em>repeats.</em><br>Update with what <em>complements.</em></h1>
+          <p class="hero-intro">Reliable cellular perturbation responses from independent experimental measurements.</p>
+          <p class="hero-description">RePert separates reproducible compound-specific signal from measurement variation, asks what Cell Painting and gene expression add to one another, and tests whether better response estimates improve downstream prediction.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#method">Explore the framework <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://github.com/Zhao-weijing/RePert-code" target="_blank" rel="noopener noreferrer">Explore code <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-chips" aria-label="At a glance">
+            <span><b>03</b> assay collections</span>
+            <span><b>CP + GE</b> modalities</span>
+            <span><b>1–3</b> repeat budgets</span>
+          </div>
+        </div>
+        <figure id="figure1" class="hero-figure">
+          <div class="figure-toolbar">
+            <span><i class="dot"></i> AUTHORS' FIGURE 01</span>
+            <a href="figures/data/figure_1/figure1_authors.pdf" target="_blank" rel="noopener">View original PDF ↗</a>
+          </div>
+          <a href="figures/data/figure_1/figure1_authors.pdf" target="_blank" rel="noopener" aria-label="Open original authors' Figure 1 PDF">
+            <img src="assets/repert_figure1.png" alt="Authors' original RePert Figure 1 showing the repeat-aware response estimation framework and conditional cross-modal updates" decoding="async" width="1600" height="900">
+          </a>
+          <figcaption>Original authors' Figure 1, rendered from the supplied PDF without redrawing or editing. <a href="figures/data/figure_1/figure1_authors.pdf">Open full-resolution PDF ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="container statement-grid">
+        <span class="small-label"><span class="decor-line"></span> The scientific question</span>
+        <p>When measurements disagree, <strong>which perturbation effects should a model be trusted to learn?</strong></p>
+      </div>
+    </section>
+
+    <section id="story" class="section container">
+      <div class="section-heading">
+        <div><span class="section-index">01 / INTRODUCTION</span><h2>From noisy experiments to<br><em>reproducible evidence.</em></h2></div>
+        <div class="section-intro"><p>Multiple perturbation measurements are not interchangeable noisy copies. Acquisition plates, dose conditions, and cross-modal mappings determine which response components remain independently reproducible.</p><p>RePert studies this as an estimation, evidence-integration, and downstream-supervision problem—not simply a larger neural network.</p></div>
+      </div>
+      <div class="question-grid">
+        <article class="question-card"><span class="question-icon" aria-hidden="true">🔁</span><span class="num">01</span><h3>What is repeatable?</h3><p>Use independent acquisition plates and matched foreign controls to isolate response signals that generalize to a held-out measurement.</p><span class="micro">measurement reliability</span></article>
+        <article class="question-card"><span class="question-icon" aria-hidden="true">🧩</span><span class="num">02</span><h3>What is complementary?</h3><p>Estimate whether observed CP or GE adds compound-specific information beyond what an existing target-modality estimate already knows.</p><span class="micro">conditional evidence</span></article>
+        <article class="question-card"><span class="question-icon" aria-hidden="true">🧠</span><span class="num">03</span><h3>What actually transfers?</h3><p>Evaluate when the cleaner response estimate improves morphological agreement or prediction—and when downstream biological tasks do not benefit.</p><span class="micro">task-level boundaries</span></article>
+      </div>
+    </section>
+
+    <section id="method" class="section method-bg">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-index">02 / FRAMEWORK</span><h2>One measured response.<br><em>Three complementary estimators.</em></h2></div>
+          <p class="section-intro">ReCA combines learned independent-repeat recovery, leave-support-out supervision, and empirical-Bayes shrinkage. Validation-only nonnegative weights integrate their strengths into a repeat-aware response estimate.</p>
+        </div>
+        <div class="process">
+          <article class="process-input"><div class="process-overline">INPUT / INDEPENDENT SUPPORT</div><div class="stacked-plates" aria-hidden="true"><span><i></i><i></i><i></i><i></i></span><span><i></i><i></i><i></i><i></i></span><span><i></i><i></i><i></i><i></i></span></div><h3>Independent assay repeats</h3><p>Compound · dose · physical acquisition plate</p></article>
+          <div class="process-arrow" aria-hidden="true">→</div>
+          <div class="estimators">
+            <div class="estimator"><span>IMR</span><p>Independent-measurement regression</p></div>
+            <div class="estimator"><span>LSO</span><p>Leave-support-out supervision</p></div>
+            <div class="estimator"><span>EB</span><p>Signal/noise-aware shrinkage</p></div>
+          </div>
+          <div class="process-arrow" aria-hidden="true">→</div>
+          <article class="process-output"><span class="output-tag">ReCA / CFRA</span><h3>Calibrated estimate</h3><p>Nonnegative fusion · independent held-out reference</p><div class="formula">ŷ = w₁·IMR + w₂·LSO + w₃·EB</div></article>
+        </div>
+        <div class="method-note"><span>🧪 Evaluation design</span><p>Support measurements never serve as their own independent evaluation target. Matching uses the compound, dose and acquisition-plate structure. Test outcomes do not select the estimator's weights.</p></div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section container">
+      <div class="section-heading">
+        <div><span class="section-index">03 / SELECTED RESULTS</span><h2>Greater specificity with<br><em>fewer measurements.</em></h2></div>
+        <p class="section-intro">Frozen BBBC047 estimates: <strong>E</strong> measures Fisher-z agreement with held-out repeats minus matched foreign-profile agreement. These are absolute specificity values rather than percentage improvements. Each support budget defines its own eligible compound subset.</p>
+      </div>
+      <div class="results-panel">
+        <div class="results-top"><div><span class="overline">BBBC047 / HELD-OUT SPECIFICITY</span><h3>Raw support vs ReCA</h3></div><div class="legend"><span><i class="legend-key raw"></i>Raw</span><span><i class="legend-key reca"></i>ReCA</span></div></div>
+        <div class="result-row">
+          <div class="result-label"><strong>1 repeat</strong><small>3,149 compounds</small></div>
+          <div class="result-bars"><div class="bar-track"><span class="bar bar-raw" style="width:63.2%"></span><span class="bar-value">0.1895</span></div><div class="bar-track"><span class="bar bar-reca" style="width:73.7%"></span><span class="bar-value">0.2212</span></div></div>
+          <div class="delta-value"><strong>+0.0317</strong><span>ΔE</span></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label"><strong>2 repeats</strong><small>3,124 compounds</small></div>
+          <div class="result-bars"><div class="bar-track"><span class="bar bar-raw" style="width:76.5%"></span><span class="bar-value">0.2294</span></div><div class="bar-track"><span class="bar bar-reca" style="width:84.7%"></span><span class="bar-value">0.2542</span></div></div>
+          <div class="delta-value"><strong>+0.0248</strong><span>ΔE</span></div>
+        </div>
+        <div class="result-row">
+          <div class="result-label"><strong>3 repeats</strong><small>2,832 compounds</small></div>
+          <div class="result-bars"><div class="bar-track"><span class="bar bar-raw" style="width:89.7%"></span><span class="bar-value">0.2692</span></div><div class="bar-track"><span class="bar bar-reca" style="width:94.0%"></span><span class="bar-value">0.2821</span></div></div>
+          <div class="delta-value"><strong>+0.0129</strong><span>ΔE</span></div>
+        </div>
+        <p class="results-source">Bars use a common E scale of 0–0.30; values are rounded for presentation. Source: <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/figures/data/figure_2/figure2_panelE.csv" target="_blank" rel="noopener noreferrer">frozen Figure 2 E records ↗</a>. Independent same-compound retrieval mAP@33 also improves from 0.4733 to 0.4845 at the one-repeat budget (<a href="https://github.com/Zhao-weijing/RePert-code/blob/main/figures/data/figure_2/figure2_panelF.csv" target="_blank" rel="noopener noreferrer">retrieval source ↗</a>).</p>
+      </div>
+    </section>
+
+    <section id="modalities" class="section modal-bg">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-index">04 / CROSS-MODAL EVIDENCE</span><h2>More modalities only help<br><em>when they add new evidence.</em></h2></div><p class="section-intro">The cross-modal branch updates a frozen target-modality estimate with compound-matched residual evidence from another assay. Shuffled and condition-matched foreign controls test whether the gain depends on the correct pairing.</p></div>
+        <div class="modal-grid">
+          <article class="modal-card">
+            <div class="modal-top"><span>🧬</span><small>GE ADDED TO CP</small></div>
+            <span class="modal-big">+0.0194</span>
+            <h3>GE after one CP repeat</h3>
+            <p>Fisher-z repeat-agreement gain · 95% CI [0.0173, 0.0216] · 3,983 compounds</p>
+            <div class="modal-foot">Evidence available: CP1 → add GE</div>
+          </article>
+          <article class="modal-card">
+            <div class="modal-top"><span>🔬</span><small>GE ADDED AFTER TWO CP REPEATS</small></div>
+            <span class="modal-big">+0.0149</span>
+            <h3>GE after CP1 and CP2</h3>
+            <p>Fisher-z repeat-agreement gain · 95% CI [0.0129, 0.0168] · 3,983 compounds</p>
+            <div class="modal-foot">Evidence available: CP1 + CP2 → add GE</div>
+          </article>
+        </div>
+        <div class="subtle-callout"><span>↳</span><p>These are <b>conditional measurement gains</b>. They do not show that gene expression can replace a Cell Painting repeat or that acquisition cost is lower.</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="limits">
+      <div class="section-heading"><div><span class="section-index">05 / BIOLOGICAL RELEVANCE</span><h2>Better estimation is a start.<br><em>Not the final endpoint.</em></h2></div><p class="section-intro">RePert follows the information downstream instead of asserting that better repeat agreement must imply better biological decisions. Reported improvements and failure modes should be interpreted together.</p></div>
+      <div class="boundary-grid">
+        <div class="boundary-card positive"><span class="status-icon" aria-hidden="true">↗</span><h3>Where estimates improve</h3><ul><li>Independent-repeat specificity</li><li>Morphology-module agreement</li><li>Several dose-trajectory measures</li><li>Some downstream response-prediction metrics</li></ul></div>
+        <div class="boundary-card caution"><span class="status-icon" aria-hidden="true">≠</span><h3>Where transfer is not guaranteed</h3><ul><li>No clear general MoA, target or pathway retrieval gain</li><li>Hit-recovery interval includes zero</li><li>Direct cross-cell-line estimator transfer may degrade</li><li>Full upstream training reproduction is not verified</li></ul></div>
+      </div>
+      <p class="reference-line">See the <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/figures/data/figure_4/figure4_D_downstream_boundaries.csv" target="_blank" rel="noopener noreferrer">downstream task boundaries ↗</a>, <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/figures/data/figure_4/figure4_E_direct_estimator_transfer_boundary.csv" target="_blank" rel="noopener noreferrer">cross-cell transfer ↗</a>, and <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/data/source_data/predictor_main_source.csv" target="_blank" rel="noopener noreferrer">predictor source values ↗</a>.</p>
+    </section>
+
+    <section class="section data-bg" id="datasets">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-index">06 / DATA RESOURCES</span><h2>Three assay collections.<br><em>One central measurement question.</em></h2></div><p class="section-intro">The evaluations cover high-dimensional Cell Painting profiles and gene-expression measurements. They require distinct preparation protocols, physical replicate identities, and task-specific inference boundaries.</p></div>
+        <div class="dataset-grid">
+          <article><span class="dataset-symbol">🔬</span><small>CP + L1000</small><h3>BBBC047</h3><p>Rosetta · U2OS</p><strong>775 CP · 977 GE</strong><a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/data_access.md">Data access ↗</a></article>
+          <article><span class="dataset-symbol">🧫</span><small>CELL PAINTING</small><h3>cpg0004-LINCS</h3><p>A549</p><strong>242 CP features</strong><a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/data_access.md">Data access ↗</a></article>
+          <article><span class="dataset-symbol">🧬</span><small>RNA-SEQ PSEUDOBULK</small><h3>sci-Plex3</h3><p>A549 · K562 · MCF7</p><strong>2,000 GE features</strong><a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/data_access.md">Data access ↗</a></article>
+        </div>
+        <p class="dataset-caveat"><span aria-hidden="true">ⓘ</span> Public source results are included in this repository; the full processed upstream assay matrices and trained checkpoints are not. <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/data_access.md">Read the data-access conditions ↗</a></p>
+      </div>
+    </section>
+
+    <section class="section code-bg" id="software">
+      <div class="container code-layout">
+        <div>
+          <span class="section-index">07 / REPRODUCE</span>
+          <h2>Start with a<br><em>synthetic example.</em></h2>
+          <p>Exercise the copied empirical-Bayes estimator and convex calibration with synthetic, disjoint compound roles. This checks the software path; it does not rerun the biological experiments.</p>
+          <div class="code-links">
+            <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/reproduction.md" target="_blank" rel="noopener noreferrer"><span>📖 Reproduction guide</span><span>↗</span></a>
+            <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/docs/source_data_map.csv" target="_blank" rel="noopener noreferrer"><span>📑 Source-data mapping</span><span>↗</span></a>
+            <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/metadata/release_status.json" target="_blank" rel="noopener noreferrer"><span>✅ Verification scope</span><span>↗</span></a>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="terminal-bar"><div class="terminal-lights"><i></i><i></i><i></i></div><span>quick_start.sh</span><button type="button" class="copy-button" data-copy="quick-code">Copy code</button></div>
+          <pre id="quick-code"><code>git clone https://github.com/Zhao-weijing/RePert-code.git
+cd RePert-code
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install numpy
+python scripts/run_estimator_example.py
+python scripts/verify_package.py</code></pre>
+          <p>Python 3.10+ · NumPy · synthetic data only · no GPU required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="resources">
+      <div class="section-heading"><div><span class="section-index">08 / OPEN SCIENCE</span><h2>Inspect the code,<br><em>numbers and boundaries.</em></h2></div><p class="section-intro">The repository supplies copied analysis runners, frozen numerical values, and plotting tools. It does not ship every processed input needed for end-to-end upstream training. Citation metadata and an archival DOI remain pending.</p></div>
+      <div class="resource-grid">
+        <a href="https://github.com/Zhao-weijing/RePert-code/tree/main/analysis/repeat_calibration" target="_blank" rel="noopener noreferrer"><span>🔁</span><strong>Estimation source</strong><small>Empirical Bayes · calibration · baselines</small><b>↗</b></a>
+        <a href="https://github.com/Zhao-weijing/RePert-code/tree/main/analysis/cross_modal" target="_blank" rel="noopener noreferrer"><span>🧩</span><strong>Cross-modal analysis</strong><small>CP · GE · matched evidence</small><b>↗</b></a>
+        <a href="https://github.com/Zhao-weijing/RePert-code/tree/main/figures/data" target="_blank" rel="noopener noreferrer"><span>📊</span><strong>Frozen result files</strong><small>Compound, seed and figure-level evidence</small><b>↗</b></a>
+        <a href="https://github.com/Zhao-weijing/RePert-code/blob/main/figures/data/figure_1/figure1_authors.pdf" target="_blank" rel="noopener noreferrer"><span>🖼️</span><strong>Authors' Figure 1</strong><small>Original, unaltered PDF</small><b>↗</b></a>
+      </div>
+      <div class="release-note"><span class="release-marker">!</span><div><h3>Release status</h3><p>This public package includes tested local numerical rebuilds and a synthetic software example. <strong>Full model-training reproduction remains unverified.</strong> The manuscript PDF is not included and no archival DOI is presently assigned. Third-party assay datasets retain their own licences.</p></div></div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>RePert</strong><span>Measure what repeats. Update with what complements.</span></div>
+      <nav aria-label="Footer links"><a href="https://github.com/Zhao-weijing/RePert-code">GitHub ↗</a><a href="figures/data/figure_1/figure1_authors.pdf">Figure 1 ↗</a><a href="#top">Back to top ↑</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
