@@ -3,7 +3,7 @@ name: Validate public documentation
 on:
   push:
     branches:
-      - docs/repert-readme-site-refresh-20261009
+      - main
   pull_request:
     paths:
       - README.md
