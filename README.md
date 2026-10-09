@@ -3,10 +3,12 @@
 <h1>RePert</h1>
 <p><strong>Reproducible perturbation responses from independent measurements</strong></p>
 <p>
-  <a href="README_zh-CN.md">简体中文</a> ·
-  <a href="https://zhao-weijing.github.io/RePert-code/">🌐 Project website</a> ·
-  <a href="#quick-start">🚀 Quick start</a> ·
-  <img src="https://img.shields.io/badge/Assay-Cell%20Painting-0C8F91?logo=microscope&logoColor=white" alt="Cell Painting"> <img src="https://img.shields.io/badge/Modality-Gene%20Expression-7753B6?logo=dna&logoColor=white" alt="Gene expression"> <img src="https://img.shields.io/badge/Principle-Independent%20Repeats-2A697A?logo=checkmarx&logoColor=white" alt="Independent biological measurements">
+  <a href="README_zh-CN.md"><img src="https://img.shields.io/badge/-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-0B7285?style=flat-square" alt="简体中文"></a>
+  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/-Project%20website-0B7285?style=flat-square" alt="Project website"></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/-Quick%20start-0B7285?style=flat-square" alt="Quick start"></a>
+  <img src="https://img.shields.io/badge/-Cell%20Painting-0B7285?style=flat-square" alt="Cell Painting">
+  <img src="https://img.shields.io/badge/-Gene%20expression-0B7285?style=flat-square" alt="Gene expression">
+  <img src="https://img.shields.io/badge/-Independent%20biological%20measurements-0B7285?style=flat-square" alt="Independent biological measurements">
 </p>
 </div>
 

@@ -3,10 +3,12 @@
 <h1>RePert</h1>
 <p><strong>基于独立测量构建可重复的细胞扰动响应</strong></p>
 <p>
-  <a href="README.md">English</a> ·
-  <a href="https://zhao-weijing.github.io/RePert-code/">🌐 项目主页</a> ·
-  <a href="#quick-start">🚀 快速开始</a> ·
-  <img src="https://img.shields.io/badge/Assay-Cell%20Painting-0C8F91?logo=microscope&logoColor=white" alt="Cell Painting"> <img src="https://img.shields.io/badge/Modality-Gene%20Expression-7753B6?logo=dna&logoColor=white" alt="Gene expression"> <img src="https://img.shields.io/badge/Principle-Independent%20Repeats-2A697A?logo=checkmarx&logoColor=white" alt="Independent biological measurements">
+  <a href="README.md"><img src="https://img.shields.io/badge/-English-0B7285?style=flat-square" alt="English"></a>
+  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/-%E9%A1%B9%E7%9B%AE%E4%B8%BB%E9%A1%B5-0B7285?style=flat-square" alt="项目主页"></a>
+  <a href="#quick-start"><img src="https://img.shields.io/badge/-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-0B7285?style=flat-square" alt="快速开始"></a>
+  <img src="https://img.shields.io/badge/-Cell%20Painting-0B7285?style=flat-square" alt="Cell Painting">
+  <img src="https://img.shields.io/badge/-Gene%20expression-0B7285?style=flat-square" alt="Gene expression">
+  <img src="https://img.shields.io/badge/-Independent%20biological%20measurements-0B7285?style=flat-square" alt="Independent biological measurements">
 </p>
 </div>
 
