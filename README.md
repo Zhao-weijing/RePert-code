@@ -6,8 +6,8 @@
 ### Reproducible Perturbation Responses from Independent Measurements
 
 <p>
-  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/🌐_Project-Website-073947?style=for-the-badge" alt="Project website"></a>
-  <a href="figures/data/figure_1/figure1_authors.pdf"><img src="https://img.shields.io/badge/🧬_Framework-Figure_1-3A6D9A?style=for-the-badge" alt="Authors' Figure 1 PDF"></a>
+  <a href="https://zhao-weijing.github.io/RePert-code/"><img src="https://img.shields.io/badge/Project-Website-073947?style=for-the-badge&logo=githubpages&logoColor=white" alt="Project website"></a>
+  <a href="figures/data/figure_1/figure1_authors.pdf"><img src="https://img.shields.io/badge/Figure_1-PDF-3A6D9A?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Authors' Figure 1 PDF"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-516B74?style=for-the-badge" alt="MIT licence"></a>
 </p>
 <p>
@@ -31,11 +31,13 @@
 
 <p align="center">
   <a href="figures/data/figure_1/figure1_authors.pdf">
-    <img alt="RePert conceptual roadmap: replicate-aware estimation, cross-modal conditional evidence and downstream prediction" src="assets/repert_overview.svg" width="980">
+    <img alt="Authors' original RePert Figure 1: independent repeats, ReCA calibrated estimation, and cross-modal updates" src="assets/repert_figure1.png" width="980">
   </a>
   <br>
-  <sub>Conceptual web overview (not a reproduction of the authors' illustration). <a href="figures/data/figure_1/figure1_authors.pdf"><b>Open the original authors' Figure 1 (PDF) ↗</b></a> · <a href="https://zhao-weijing.github.io/RePert-code/#figure1">View Figure 1 on the project website ↗</a></sub>
+  <sub><b>Figure 1.</b> Original authors' schematic, rendered directly from the supplied PDF. <a href="figures/data/figure_1/figure1_authors.pdf"><b>Open the full-resolution PDF ↗</b></a> · <a href="https://zhao-weijing.github.io/RePert-code/#figure1">View Figure 1 on the project website ↗</a></sub>
 </p>
+
+<details><summary><b>🧭 Explore a simplified three-stage overview</b></summary><p align="center"><img src="assets/repert_overview.svg" alt="Simplified RePert analysis roadmap (secondary illustration)" width="960"></p></details>
 
 <a id="-framework"></a>
 ## ✨ Framework at a glance

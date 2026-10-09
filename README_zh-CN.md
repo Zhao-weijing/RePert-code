@@ -6,8 +6,8 @@
 ### 基于独立测量的可重复细胞扰动响应估计
 
 <p>
-<a href="https://zhao-weijing.github.io/RePert-code/"><img alt="项目主页" src="https://img.shields.io/badge/🌐_Project-Website-073947?style=for-the-badge"></a>
-<a href="figures/data/figure_1/figure1_authors.pdf"><img alt="原始 Figure 1" src="https://img.shields.io/badge/🧬_Framework-Figure_1-3A6D9A?style=for-the-badge"></a>
+<a href="https://zhao-weijing.github.io/RePert-code/"><img alt="项目主页" src="https://img.shields.io/badge/Project-Website-073947?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+<a href="figures/data/figure_1/figure1_authors.pdf"><img alt="原始 Figure 1" src="https://img.shields.io/badge/Figure_1-PDF-3A6D9A?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"></a>
 <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/License-MIT-516B74?style=for-the-badge"></a>
 </p>
 
@@ -24,9 +24,11 @@
 **RePert** 研究在实验重复有限、观测噪声显著时，如何可靠地估计细胞扰动响应。项目使用来自独立采集板（acquisition plates）的重复测量，区分具有药物特异性的可重复信号与共享背景结构；通过独立重复回归（IMR）、排除输入板的监督（LSO）、经验贝叶斯收缩（IMCEB）与验证集校准融合（ReCA）构造响应估计。随后分析 Cell Painting（CP）和基因表达（GE）在已有估计之外能否提供真实的**条件增量信息**，并检验改进后的监督信号能否提升未见扰动的预测。结果表明重复一致性与部分形态学表型可改善，但不能据此假定 MoA/靶点/通路检索或跨细胞系迁移一定受益。
 
 <p align="center">
-<a href="figures/data/figure_1/figure1_authors.pdf"><img src="assets/repert_overview.svg" alt="RePert 简化概念流程示意图" width="980"></a><br>
-<sub>上图为网页用简化流程示意，并非作者 Figure 1 的重绘。<a href="figures/data/figure_1/figure1_authors.pdf">查看原始 Figure 1（PDF）↗</a> · <a href="https://zhao-weijing.github.io/RePert-code/#figure1">项目主页图示 ↗</a></sub>
+<a href="figures/data/figure_1/figure1_authors.pdf"><img src="assets/repert_figure1.png" alt="RePert 作者原始 Figure 1：独立重复、ReCA 估计与跨模态残差更新" width="980"></a><br>
+<sub><b>Figure 1.</b> 从作者原始 PDF 直接渲染，未修改科学图示内容。<a href="figures/data/figure_1/figure1_authors.pdf">查看高分辨率原始 PDF ↗</a> · <a href="https://zhao-weijing.github.io/RePert-code/#figure1">项目主页图示 ↗</a></sub>
 </p>
+
+<details><summary><b>🧭 查看三阶段简化示意</b></summary><p align="center"><img src="assets/repert_overview.svg" alt="RePert 简化示意图（非作者原始 Figure 1）" width="960"></p></details>
 
 <a id="-方法框架"></a>
 ## ✨ 方法框架

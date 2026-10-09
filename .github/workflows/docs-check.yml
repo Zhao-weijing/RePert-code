@@ -1,0 +1,38 @@
+name: Validate public documentation
+
+on:
+  push:
+    branches:
+      - docs/repert-readme-site-refresh-20261009
+  pull_request:
+    paths:
+      - README.md
+      - README_zh-CN.md
+      - index.html
+      - assets/**
+      - docs/website.md
+      - scripts/check_public_site.py
+      - scripts/render_public_figure.py
+      - metadata/FILE_MANIFEST.csv
+      - .github/workflows/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install synthetic estimator dependency
+        run: python -m pip install "numpy==1.26.4"
+      - name: Validate site links, original figure and frozen results
+        run: python scripts/check_public_site.py
+      - name: Run the synthetic estimator example
+        run: python scripts/run_estimator_example.py
+      - name: Verify package hashes, syntax and release integrity
+        run: python scripts/verify_package.py
